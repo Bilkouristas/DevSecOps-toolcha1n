@@ -7,8 +7,6 @@ on:
 
 
 jobs:
-
-# Replace this section accordingly, with your under development application
   Building_app:
     runs-on: ubuntu-latest
     name: Building the app
