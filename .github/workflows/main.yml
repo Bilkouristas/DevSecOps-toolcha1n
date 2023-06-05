@@ -54,7 +54,7 @@ jobs:
           cmd_options: '-a'
   
 
-  Setting_DAST:
+  Setting_DAST_Tool:
         name: DAST Scans
         needs: Building_app
         runs-on: ubuntu-latest
@@ -75,7 +75,7 @@ jobs:
 
           - name: Setting up DAST-Tool 
             run: |
-              cd DAST_Tool
+              cd DAST_Tool/mern-app
               sudo docker-compose up &
 
           - name: WDST Tests
