@@ -6,7 +6,7 @@ on:
     branches: ['master']
 
 jobs:
-  Building_app: 
+  building_app: 
     name: Building the app
     runs-on: ubuntu-latest
     
@@ -44,7 +44,7 @@ jobs:
           ./mvnw spring-boot:run
 
 
-  Basic_scan:
+  basic_scan:
     name: Basic scan
     runs-on: ubuntu-latest
      
