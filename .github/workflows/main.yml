@@ -75,14 +75,14 @@ jobs:
           - name: Setting up DAST-Tool 
             run: |
               cd DAST_Tool/mern-app
-              sudo docker-compose up &
+              sudo docker-compose up 
 
           
 
   WAST_Tests:
       name: WAST Tests and Ajax Scan
       runs-on: ubuntu-latest
-      needs: [ 'Building_app', 'Setting_DAST_Tool' ]
+      needs: [ 'Building_app' ]
       steps:
         - name: Checkout code
           uses: actions/checkout@v3
