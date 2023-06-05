@@ -3,7 +3,7 @@ const zapscanner = require("./index");
 /* Setting Parameters */
 
 // URL to perform tests to.
-const url = "http://localhost:80";
+const url = "http://localhost:8080/WebGoat";
 
 // ZAP Process Options.
 const zapProcOpt = {
@@ -18,8 +18,8 @@ const zapOpt = {
 
 // Scans to perform.
 const zapScans = {
-  spider: true,
-  ajaxspider: false,
+  spider: false,
+  ajaxspider: true,
   activescan: false,
 };
 
