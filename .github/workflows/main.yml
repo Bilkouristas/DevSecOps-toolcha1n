@@ -9,7 +9,7 @@ on:
 jobs:
 
 # Replace this section accordingly, with your under development application
-  Building_app:
+  building_app:
     name: Building the app
     runs-on: ubuntu-latest
     steps:
