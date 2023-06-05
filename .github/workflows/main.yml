@@ -55,7 +55,7 @@ jobs:
   
 
   Setting_DAST:
-      - name: DAST Scans
+        name: DAST Scans
         needs: Building the app/Passive scanning
         runs-on: ubuntu-latest
         steps:
@@ -77,7 +77,7 @@ jobs:
             run: |
               cd DAST_Tool
               sudo docker-compose up &
-              
+
           - name: WDST Tests
             run: |
               cd DAST_Tool/mern-app/zapscanner
