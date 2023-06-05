@@ -1,5 +1,7 @@
 name: CI/CD Pipeline 
 run-name: Continuous_Integration
+permissions: read-all|write-all
+
 
 on: 
   push: 
