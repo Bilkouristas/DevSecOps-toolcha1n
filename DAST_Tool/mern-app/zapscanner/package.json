@@ -1,0 +1,26 @@
+{
+  "name": "dynamicanalysisexperimental",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "async": "^3.2.0",
+    "cli-progress": "^3.8.2",
+    "selenium-webdriver": "^4.0.0-alpha.7",
+    "zaproxy": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node example.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AuthEceSoftEng/DynamicAnalysisExperimental.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AuthEceSoftEng/DynamicAnalysisExperimental/issues"
+  },
+  "homepage": "https://github.com/AuthEceSoftEng/DynamicAnalysisExperimental#readme"
+}

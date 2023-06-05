@@ -1,0 +1,230 @@
+
+<html>
+  <head><title>Security Report</title></head>
+  <link rel="stylesheet" type="text/css" href="df_style.css"/>
+  <body>
+    <h1> Security </h1>
+    <table border="1" class="dataframe mystyle">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Target IP</th>
+      <th>Target Hostname</th>
+      <th>Target Port</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>165.22.65.139</td>
+      <td>www.cyclopt.com</td>
+      <td>443</td>
+    </tr>
+  </tbody>
+</table>
+    </br>
+    <table border="1" class="dataframe mystyle">
+  <thead>
+    <tr style="text-align: center;">
+      <th></th>
+      <th>Vulnerability Message</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>Server: Netlify</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type.</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Uncommon header 'x-nf-request-id' found, with contents: 6455d2e4-abd4-4aa7-9d05-b52f65450a6c-35492890</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>The site uses SSL and Expect-CT header is not present.</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>The anti-clickjacking X-Frame-Options header is not present.</td>
+    </tr>
+  </tbody>
+</table>
+    </br>
+    <h1> Accessibility </h1>
+    </br>
+    <table border="1" class="dataframe mystyle">
+  <thead>
+    <tr style="text-align: center;">
+      <th></th>
+      <th>code</th>
+      <th>type</th>
+      <th>typeCode</th>
+      <th>message</th>
+      <th>context</th>
+      <th>selector</th>
+      <th>runner</th>
+      <th>runnerExtras</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Fail</td>
+      <td>error</td>
+      <td>1</td>
+      <td>This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 2.03:1. Recommendation:  change background to #00a6a1.</td>
+      <td>&lt;span class="has-text-weight-bold" style="margin-left: 0.5rem; font-size: 140%;"&gt;GitHub&lt;/span&gt;</td>
+      <td>#root &gt; div &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(4) &gt; span &gt; a &gt; span</td>
+      <td>htmlcs</td>
+      <td>{}</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</td>
+      <td>error</td>
+      <td>1</td>
+      <td>This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.72:1. Recommendation:  change background to #004a7d.</td>
+      <td>&lt;a class="services-buttons" href="/developers"&gt;DEVELOPER&lt;/a&gt;</td>
+      <td>#root &gt; div &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; div:nth-child(1) &gt; a</td>
+      <td>htmlcs</td>
+      <td>{}</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</td>
+      <td>error</td>
+      <td>1</td>
+      <td>This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.72:1. Recommendation:  change background to #004a7d.</td>
+      <td>&lt;a class="services-buttons" href="/teamleaders"&gt;TEAM LEADER&lt;/a&gt;</td>
+      <td>#root &gt; div &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; a</td>
+      <td>htmlcs</td>
+      <td>{}</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</td>
+      <td>error</td>
+      <td>1</td>
+      <td>This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.03:1. Recommendation:  change text colour to #008480.</td>
+      <td>&lt;div class="color-lightblue" style="text-align: right; font-weight: bold; margin-top: 1.5rem; margin-right: 3rem;"&gt;Dr. Eng. Andreas Symeonidis&lt;/div&gt;</td>
+      <td>#root &gt; div &gt; div:nth-child(9) &gt; div:nth-child(2)</td>
+      <td>htmlcs</td>
+      <td>{}</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</td>
+      <td>error</td>
+      <td>1</td>
+      <td>This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.03:1. Recommendation:  change text colour to #008480.</td>
+      <td>&lt;div class="color-lightblue" style="text-align: right; margin-right: 3rem;"&gt;Head of research and co-founder&lt;/div&gt;</td>
+      <td>#root &gt; div &gt; div:nth-child(9) &gt; div:nth-child(3)</td>
+      <td>htmlcs</td>
+      <td>{}</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Fail</td>
+      <td>error</td>
+      <td>1</td>
+      <td>This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 2.03:1. Recommendation:  change background to #00a6a1.</td>
+      <td>&lt;div class="row" style="color: white; font-size: 180%; font-weight: bolder;"&gt;See how it works for you:&lt;/div&gt;</td>
+      <td>#root &gt; div &gt; div:nth-child(10) &gt; div:nth-child(1) &gt; div:nth-child(1)</td>
+      <td>htmlcs</td>
+      <td>{}</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent</td>
+      <td>error</td>
+      <td>1</td>
+      <td>Anchor element found with a valid href attribute, but no link content has been supplied.</td>
+      <td>&lt;a class="footerlinks" href="https://www.facebook.com/Cyclopt" target="_blank" rel="noreferrer noopener"&gt;&lt;i class="fab fa-facebook-f fa-...&lt;/a&gt;</td>
+      <td>#root &gt; div &gt; div:nth-child(11) &gt; div:nth-child(1) &gt; div:nth-child(3) &gt; a:nth-child(1)</td>
+      <td>htmlcs</td>
+      <td>{}</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent</td>
+      <td>error</td>
+      <td>1</td>
+      <td>Anchor element found with a valid href attribute, but no link content has been supplied.</td>
+      <td>&lt;a class="footerlinks" href="https://www.linkedin.com/company/cyclopt" target="_blank" rel="noreferrer noopener"&gt;&lt;i class="fab fa-linkedin-in fa...&lt;/a&gt;</td>
+      <td>#root &gt; div &gt; div:nth-child(11) &gt; div:nth-child(1) &gt; div:nth-child(3) &gt; a:nth-child(2)</td>
+      <td>htmlcs</td>
+      <td>{}</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent</td>
+      <td>error</td>
+      <td>1</td>
+      <td>Anchor element found with a valid href attribute, but no link content has been supplied.</td>
+      <td>&lt;a class="footerlinks" href="https://twitter.com/cyclopt" target="_blank" rel="noreferrer noopener"&gt;&lt;i class="fab fa-twitter fa-lg ...&lt;/a&gt;</td>
+      <td>#root &gt; div &gt; div:nth-child(11) &gt; div:nth-child(1) &gt; div:nth-child(3) &gt; a:nth-child(3)</td>
+      <td>htmlcs</td>
+      <td>{}</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</td>
+      <td>error</td>
+      <td>1</td>
+      <td>This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.03:1. Recommendation:  change text colour to #008480.</td>
+      <td>&lt;span class="menu-line"&gt;|&lt;/span&gt;</td>
+      <td>#root &gt; div &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div &gt; span:nth-child(2)</td>
+      <td>htmlcs</td>
+      <td>{}</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</td>
+      <td>error</td>
+      <td>1</td>
+      <td>This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.03:1. Recommendation:  change text colour to #008480.</td>
+      <td>&lt;span class="menu-line"&gt;|&lt;/span&gt;</td>
+      <td>#root &gt; div &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div &gt; span:nth-child(4)</td>
+      <td>htmlcs</td>
+      <td>{}</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</td>
+      <td>error</td>
+      <td>1</td>
+      <td>This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.03:1. Recommendation:  change text colour to #008480.</td>
+      <td>&lt;span class="menu-line"&gt;|&lt;/span&gt;</td>
+      <td>#root &gt; div &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div &gt; span:nth-child(6)</td>
+      <td>htmlcs</td>
+      <td>{}</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</td>
+      <td>error</td>
+      <td>1</td>
+      <td>This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.03:1. Recommendation:  change text colour to #008480.</td>
+      <td>&lt;span class="menu-line"&gt;|&lt;/span&gt;</td>
+      <td>#root &gt; div &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div &gt; span:nth-child(8)</td>
+      <td>htmlcs</td>
+      <td>{}</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</td>
+      <td>error</td>
+      <td>1</td>
+      <td>This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.03:1. Recommendation:  change text colour to #008480.</td>
+      <td>&lt;span class="menu-line"&gt;|&lt;/span&gt;</td>
+      <td>#root &gt; div &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div &gt; span:nth-child(10)</td>
+      <td>htmlcs</td>
+      <td>{}</td>
+    </tr>
+  </tbody>
+</table>
+    </br></br>
+  </body>
+</html>.

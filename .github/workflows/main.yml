@@ -1,0 +1,65 @@
+name: CI/CD Pipeline 
+run-name: Continuous_Integration
+
+on: 
+  push: 
+    branches: ['master']
+
+
+jobs:
+
+# Replace this section accordingly, with your under development application
+  Building_app:
+    name: Building the app
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up node.js
+        uses: actions/setup-node@v3
+        with: 
+          node-version: '12'
+
+      - name: Set up java environment
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Install Dependencies 
+        run: |
+          cd WebGoat
+          chmod +x mvnw
+          ./mvnw clean install
+
+      - name: Build Docker image locally
+        run: |
+          cd WebGoat
+          chmod +x mvnw
+          docker build -f Dockerfile . -t webgoat/webgoat 
+
+     - name: Run the project  
+       run: |
+          cd WebGoat
+          chmod +x mvnw
+          ./mvnw spring-boot:run
+
+
+  basic_scan:
+    runs-on: ubuntu-latest
+    name: Basic scan 
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: master
+      - name: ZAP Scan
+        uses: zaproxy/action-baseline@v0.7.0
+        with:
+        #  token: ${{ secrets.GITHUB_TOKEN }}
+          docker_name: 'owasp/zap2docker-stable'
+          target: 'http://localhost:8080'
+        #  rules_file_name: '.zap/rules.tsv'
+          cmd_options: '-a'
+    

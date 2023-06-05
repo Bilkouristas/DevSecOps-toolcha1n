@@ -1,0 +1,2840 @@
+{
+    "url": "https://www.cyclopt.com/",
+    "scan": {
+        "captchaResult": "CAPTCHA_NOT_NEEDED",
+        "kind": "pagespeedonline#result",
+        "id": "https://www.cyclopt.com/",
+        "loadingExperience": {
+            "initial_url": "https://www.cyclopt.com/"
+        },
+        "lighthouseResult": {
+            "requestedUrl": "https://www.cyclopt.com/",
+            "finalUrl": "https://www.cyclopt.com/",
+            "lighthouseVersion": "6.3.0",
+            "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/85.0.4183.140 Safari/537.36",
+            "fetchTime": "2020-11-20T07:04:37.361Z",
+            "environment": {
+                "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4143.7 Safari/537.36 Chrome-Lighthouse",
+                "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/85.0.4183.140 Safari/537.36",
+                "benchmarkIndex": 785.5
+            },
+            "runWarnings": [],
+            "configSettings": {
+                "emulatedFormFactor": "desktop",
+                "locale": "en-US",
+                "onlyCategories": [
+                    "accessibility",
+                    "best-practices"
+                ],
+                "channel": "lr"
+            },
+            "audits": {
+                "color-contrast": {
+                    "id": "color-contrast",
+                    "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+                    "description": "Low-contrast text is difficult or impossible for many users to read. [Learn more](https://web.dev/color-contrast/).",
+                    "score": 0,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "type": "table",
+                        "items": [
+                            {
+                                "node": {
+                                    "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.03 (foreground color: #ffffff, background color: #00cbc4, font size: 16.8pt (22.4px), font weight: bold). Expected contrast ratio of 3:1",
+                                    "selector": ".is-primary > .has-text-weight-bold",
+                                    "snippet": "<span class=\"has-text-weight-bold\" style=\"margin-left: 0.5rem; font-size: 140%;\">GitHub</span>",
+                                    "boundingRect": {
+                                        "bottom": 401,
+                                        "top": 368,
+                                        "height": 33,
+                                        "width": 78,
+                                        "left": 118,
+                                        "right": 196
+                                    },
+                                    "nodeLabel": "GitHub",
+                                    "type": "node",
+                                    "path": "0,HTML,1,BODY,1,DIV,0,DIV,1,DIV,0,DIV,3,DIV,0,SPAN,0,A,1,SPAN"
+                                }
+                            },
+                            {
+                                "node": {
+                                    "selector": ".services-buttons[href$=\"developers\"]",
+                                    "path": "0,HTML,1,BODY,1,DIV,0,DIV,1,DIV,1,DIV,2,DIV,0,DIV,0,A",
+                                    "type": "node",
+                                    "boundingRect": {
+                                        "left": 851,
+                                        "top": 391,
+                                        "bottom": 431,
+                                        "height": 40,
+                                        "right": 1003,
+                                        "width": 152
+                                    },
+                                    "snippet": "<a class=\"services-buttons\" href=\"/developers\">DEVELOPER</a>",
+                                    "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.72 (foreground color: #00cbc4, background color: #005792, font size: 11.1pt (14.85px), font weight: bold). Expected contrast ratio of 4.5:1",
+                                    "nodeLabel": "DEVELOPER"
+                                }
+                            },
+                            {
+                                "node": {
+                                    "type": "node",
+                                    "snippet": "<a class=\"services-buttons\" href=\"/teamleaders\">TEAM LEADER</a>",
+                                    "boundingRect": {
+                                        "left": 1098,
+                                        "bottom": 431,
+                                        "height": 40,
+                                        "right": 1266,
+                                        "width": 168,
+                                        "top": 391
+                                    },
+                                    "selector": ".services-buttons[href$=\"teamleaders\"]",
+                                    "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.72 (foreground color: #00cbc4, background color: #005792, font size: 11.1pt (14.85px), font weight: bold). Expected contrast ratio of 4.5:1",
+                                    "nodeLabel": "TEAM LEADER",
+                                    "path": "0,HTML,1,BODY,1,DIV,0,DIV,1,DIV,1,DIV,2,DIV,1,DIV,0,A"
+                                }
+                            },
+                            {
+                                "node": {
+                                    "nodeLabel": "Dr. Eng. Andreas Symeonidis",
+                                    "boundingRect": {
+                                        "right": 1167,
+                                        "height": 24,
+                                        "top": 1894,
+                                        "bottom": 1918,
+                                        "left": 135,
+                                        "width": 1032
+                                    },
+                                    "selector": ".quote > .color-lightblue:nth-child(2)",
+                                    "type": "node",
+                                    "snippet": "<div class=\"color-lightblue\" style=\"text-align: right; font-weight: bold; margin-top: 1.5rem; margin-right: 3rem;\">Dr. Eng. Andreas Symeonidis</div>",
+                                    "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.03 (foreground color: #00cbc4, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1",
+                                    "path": "0,HTML,1,BODY,1,DIV,0,DIV,8,DIV,1,DIV"
+                                }
+                            },
+                            {
+                                "node": {
+                                    "type": "node",
+                                    "nodeLabel": "Head of research and co-founder",
+                                    "selector": ".color-lightblue:nth-child(3)",
+                                    "snippet": "<div class=\"color-lightblue\" style=\"text-align: right; margin-right: 3rem;\">Head of research and co-founder</div>",
+                                    "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.03 (foreground color: #00cbc4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+                                    "boundingRect": {
+                                        "right": 1167,
+                                        "top": 1918,
+                                        "bottom": 1942,
+                                        "width": 1032,
+                                        "left": 135,
+                                        "height": 24
+                                    },
+                                    "path": "0,HTML,1,BODY,1,DIV,0,DIV,8,DIV,2,DIV"
+                                }
+                            },
+                            {
+                                "node": {
+                                    "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.03 (foreground color: #ffffff, background color: #00cbc4, font size: 21.6pt (28.8px), font weight: bold). Expected contrast ratio of 3:1",
+                                    "boundingRect": {
+                                        "top": 2034,
+                                        "left": 64,
+                                        "right": 824,
+                                        "height": 43,
+                                        "bottom": 2077,
+                                        "width": 760
+                                    },
+                                    "snippet": "<div class=\"row\" style=\"color: white; font-size: 180%; font-weight: bolder;\">See how it works for you:</div>",
+                                    "type": "node",
+                                    "nodeLabel": "See how it works for you:",
+                                    "path": "0,HTML,1,BODY,1,DIV,0,DIV,9,DIV,0,DIV,0,DIV",
+                                    "selector": ".is-three-fifths.column > .row:nth-child(1)"
+                                }
+                            }
+                        ],
+                        "debugData": {
+                            "type": "debugdata",
+                            "impact": "serious",
+                            "tags": [
+                                "cat.color",
+                                "wcag2aa",
+                                "wcag143"
+                            ]
+                        },
+                        "headings": [
+                            {
+                                "key": "node",
+                                "text": "Failing Elements",
+                                "itemType": "node"
+                            }
+                        ]
+                    }
+                },
+                "th-has-data-cells": {
+                    "id": "th-has-data-cells",
+                    "title": "`<th>` elements and elements with `[role=\"columnheader\"/\"rowheader\"]` have data cells they describe.",
+                    "description": "Screen readers have features to make navigating tables easier. Ensuring table headers always refer to some set of cells may improve the experience for screen reader users. [Learn more](https://web.dev/th-has-data-cells/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "js-libraries": {
+                    "id": "js-libraries",
+                    "title": "Detected JavaScript libraries",
+                    "description": "All front-end JavaScript libraries detected on the page. [Learn more](https://web.dev/js-libraries/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "type": "table",
+                        "items": [
+                            {
+                                "name": "React",
+                                "npm": "react"
+                            },
+                            {
+                                "name": "Create React App",
+                                "npm": "react-scripts"
+                            }
+                        ],
+                        "headings": [
+                            {
+                                "text": "Name",
+                                "key": "name",
+                                "itemType": "text"
+                            },
+                            {
+                                "key": "version",
+                                "text": "Version",
+                                "itemType": "text"
+                            }
+                        ],
+                        "summary": {},
+                        "debugData": {
+                            "stacks": [
+                                {
+                                    "id": "react"
+                                },
+                                {
+                                    "id": "create-react-app"
+                                }
+                            ],
+                            "type": "debugdata"
+                        }
+                    }
+                },
+                "duplicate-id-active": {
+                    "id": "duplicate-id-active",
+                    "title": "`[id]` attributes on active, focusable elements are unique",
+                    "description": "All focusable elements must have a unique `id` to ensure that they're visible to assistive technologies. [Learn more](https://web.dev/duplicate-id-active/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "type": "table",
+                        "headings": [],
+                        "items": []
+                    }
+                },
+                "interactive-element-affordance": {
+                    "id": "interactive-element-affordance",
+                    "title": "Interactive elements indicate their purpose and state",
+                    "description": "Interactive elements, such as links and buttons, should indicate their state and be distinguishable from non-interactive elements. [Learn more](https://web.dev/interactive-element-affordance/).",
+                    "score": null,
+                    "scoreDisplayMode": "manual"
+                },
+                "video-caption": {
+                    "id": "video-caption",
+                    "title": "`<video>` elements contain a `<track>` element with `[kind=\"captions\"]`",
+                    "description": "When a video provides a caption it is easier for deaf and hearing impaired users to access its information. [Learn more](https://web.dev/video-caption/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "td-headers-attr": {
+                    "id": "td-headers-attr",
+                    "title": "Cells in a `<table>` element that use the `[headers]` attribute refer to table cells within the same table.",
+                    "description": "Screen readers have features to make navigating tables easier. Ensuring `<td>` cells using the `[headers]` attribute only refer to other cells in the same table may improve the experience for screen reader users. [Learn more](https://web.dev/td-headers-attr/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "custom-controls-roles": {
+                    "id": "custom-controls-roles",
+                    "title": "Custom controls have ARIA roles",
+                    "description": "Custom interactive controls have appropriate ARIA roles. [Learn more](https://web.dev/custom-control-roles/).",
+                    "score": null,
+                    "scoreDisplayMode": "manual"
+                },
+                "notification-on-start": {
+                    "id": "notification-on-start",
+                    "title": "Avoids requesting the notification permission on page load",
+                    "description": "Users are mistrustful of or confused by sites that request to send notifications without context. Consider tying the request to user gestures instead. [Learn more](https://web.dev/notification-on-start/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "type": "table",
+                        "headings": [],
+                        "items": []
+                    }
+                },
+                "bypass": {
+                    "id": "bypass",
+                    "title": "The page does not contain a heading, skip link, or landmark region",
+                    "description": "Adding ways to bypass repetitive content lets keyboard users navigate the page more efficiently. [Learn more](https://web.dev/bypass/).",
+                    "score": 0,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "items": [
+                            {
+                                "node": {
+                                    "selector": "html",
+                                    "type": "node",
+                                    "path": "0,HTML",
+                                    "snippet": "<html lang=\"en\">",
+                                    "boundingRect": {
+                                        "top": 0,
+                                        "left": 0,
+                                        "height": 940,
+                                        "right": 1350,
+                                        "width": 1350,
+                                        "bottom": 940
+                                    },
+                                    "nodeLabel": "html",
+                                    "explanation": "Fix any of the following:\n  No valid skip link found\n  Page does not have a heading\n  Page does not have a landmark region"
+                                }
+                            }
+                        ],
+                        "headings": [
+                            {
+                                "text": "Failing Elements",
+                                "itemType": "node",
+                                "key": "node"
+                            }
+                        ],
+                        "debugData": {
+                            "type": "debugdata",
+                            "tags": [
+                                "cat.keyboard",
+                                "wcag2a",
+                                "wcag241",
+                                "section508",
+                                "section508.22.o"
+                            ],
+                            "impact": "serious"
+                        },
+                        "type": "table"
+                    }
+                },
+                "aria-valid-attr-value": {
+                    "id": "aria-valid-attr-value",
+                    "title": "`[aria-*]` attributes have valid values",
+                    "description": "Assistive technologies, like screen readers, can't interpret ARIA attributes with invalid values. [Learn more](https://web.dev/aria-valid-attr-value/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "aria-hidden-focus": {
+                    "id": "aria-hidden-focus",
+                    "title": "`[aria-hidden=\"true\"]` elements contain focusable descendents",
+                    "description": "Focusable descendents within an `[aria-hidden=\"true\"]` element prevent those interactive elements from being available to users of assistive technologies like screen readers. [Learn more](https://web.dev/aria-hidden-focus/).",
+                    "score": 0,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "type": "table",
+                        "headings": [
+                            {
+                                "itemType": "node",
+                                "key": "node",
+                                "text": "Failing Elements"
+                            }
+                        ],
+                        "items": [
+                            {
+                                "node": {
+                                    "path": "0,HTML,1,BODY,1,DIV,0,DIV,0,DIV,1,DIV,0,DIV",
+                                    "type": "node",
+                                    "snippet": "<div aria-hidden=\"true\">",
+                                    "selector": "div[aria-hidden=\"true\"]",
+                                    "nodeLabel": "PRODUCT|PRICING|\nSERVICES\n|BLOG|\nR&D\n|COMPANY",
+                                    "boundingRect": {
+                                        "height": 24,
+                                        "bottom": 112,
+                                        "top": 88,
+                                        "left": 675,
+                                        "width": 623,
+                                        "right": 1298
+                                    },
+                                    "explanation": "Fix all of the following:\n  Focusable content should have tabindex='-1' or be removed from the DOM"
+                                }
+                            }
+                        ],
+                        "debugData": {
+                            "tags": [
+                                "cat.name-role-value",
+                                "wcag2a",
+                                "wcag412",
+                                "wcag131"
+                            ],
+                            "impact": "serious",
+                            "type": "debugdata"
+                        }
+                    }
+                },
+                "duplicate-id-aria": {
+                    "id": "duplicate-id-aria",
+                    "title": "ARIA IDs are not unique",
+                    "description": "The value of an ARIA ID must be unique to prevent other instances from being overlooked by assistive technologies. [Learn more](https://web.dev/duplicate-id-aria/).",
+                    "score": 0,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "headings": [
+                            {
+                                "key": "node",
+                                "text": "Failing Elements",
+                                "itemType": "node"
+                            }
+                        ],
+                        "type": "table",
+                        "items": [
+                            {
+                                "node": {
+                                    "explanation": "Fix any of the following:\n  Document has multiple elements referenced with ARIA with the same id attribute: dropdown-menu",
+                                    "selector": "#dropdownMenuServices > .dropdown-menu[role=\"menu\"]",
+                                    "path": "0,HTML,1,BODY,1,DIV,0,DIV,0,DIV,1,DIV,0,DIV,4,DIV,1,DIV",
+                                    "nodeLabel": "For DevelopersFor Team Leaders",
+                                    "type": "node",
+                                    "snippet": "<div class=\"dropdown-menu\" id=\"dropdown-menu\" role=\"menu\">"
+                                }
+                            }
+                        ],
+                        "debugData": {
+                            "type": "debugdata",
+                            "impact": "critical",
+                            "tags": [
+                                "cat.parsing",
+                                "wcag2a",
+                                "wcag411"
+                            ]
+                        }
+                    }
+                },
+                "errors-in-console": {
+                    "id": "errors-in-console",
+                    "title": "No browser errors logged to the console",
+                    "description": "Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser concerns. [Learn more](https://web.dev/errors-in-console/)",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "items": [],
+                        "type": "table",
+                        "headings": []
+                    }
+                },
+                "appcache-manifest": {
+                    "id": "appcache-manifest",
+                    "title": "Avoids Application Cache",
+                    "description": "Application Cache is deprecated. [Learn more](https://web.dev/appcache-manifest/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary"
+                },
+                "aria-hidden-body": {
+                    "id": "aria-hidden-body",
+                    "title": "`[aria-hidden=\"true\"]` is not present on the document `<body>`",
+                    "description": "Assistive technologies, like screen readers, work inconsistently when `aria-hidden=\"true\"` is set on the document `<body>`. [Learn more](https://web.dev/aria-hidden-body/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "type": "table",
+                        "headings": [],
+                        "items": []
+                    }
+                },
+                "heading-order": {
+                    "id": "heading-order",
+                    "title": "Heading elements appear in a sequentially-descending order",
+                    "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more](https://web.dev/heading-order/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "meta-refresh": {
+                    "id": "meta-refresh",
+                    "title": "The document does not use `<meta http-equiv=\"refresh\">`",
+                    "description": "Users do not expect a page to refresh automatically, and doing so will move focus back to the top of the page. This may create a frustrating or confusing experience. [Learn more](https://web.dev/meta-refresh/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "definition-list": {
+                    "id": "definition-list",
+                    "title": "`<dl>`'s contain only properly-ordered `<dt>` and `<dd>` groups, `<script>`, `<template>` or `<div>` elements.",
+                    "description": "When definition lists are not properly marked up, screen readers may produce confusing or inaccurate output. [Learn more](https://web.dev/definition-list/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "aria-input-field-name": {
+                    "id": "aria-input-field-name",
+                    "title": "ARIA input fields have accessible names",
+                    "description": "When an input field doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn more](https://web.dev/aria-input-field-name/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "no-vulnerable-libraries": {
+                    "id": "no-vulnerable-libraries",
+                    "title": "Avoids front-end JavaScript libraries with known security vulnerabilities",
+                    "description": "Some third-party scripts may contain known security vulnerabilities that are easily identified and exploited by attackers. [Learn more](https://web.dev/no-vulnerable-libraries/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "summary": {},
+                        "headings": [],
+                        "items": [],
+                        "type": "table"
+                    }
+                },
+                "deprecations": {
+                    "id": "deprecations",
+                    "title": "Avoids deprecated APIs",
+                    "description": "Deprecated APIs will eventually be removed from the browser. [Learn more](https://web.dev/deprecations/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "type": "table",
+                        "items": [],
+                        "headings": []
+                    }
+                },
+                "valid-lang": {
+                    "id": "valid-lang",
+                    "title": "`[lang]` attributes have a valid value",
+                    "description": "Specifying a valid [BCP 47 language](https://www.w3.org/International/questions/qa-choosing-language-tags#question) on elements helps ensure that text is pronounced correctly by a screen reader. [Learn more](https://web.dev/valid-lang/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "frame-title": {
+                    "id": "frame-title",
+                    "title": "`<frame>` or `<iframe>` elements have a title",
+                    "description": "Screen reader users rely on frame titles to describe the contents of frames. [Learn more](https://web.dev/frame-title/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "button-name": {
+                    "id": "button-name",
+                    "title": "Buttons have an accessible name",
+                    "description": "When a button doesn't have an accessible name, screen readers announce it as \"button\", making it unusable for users who rely on screen readers. [Learn more](https://web.dev/button-name/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "headings": [],
+                        "type": "table",
+                        "items": []
+                    }
+                },
+                "doctype": {
+                    "id": "doctype",
+                    "title": "Page lacks the HTML doctype, thus triggering quirks-mode",
+                    "description": "Specifying a doctype prevents the browser from switching to quirks-mode. [Learn more](https://web.dev/doctype/).",
+                    "score": 0,
+                    "scoreDisplayMode": "binary",
+                    "explanation": "Document must contain a doctype"
+                },
+                "html-lang-valid": {
+                    "id": "html-lang-valid",
+                    "title": "`<html>` element has a valid value for its `[lang]` attribute",
+                    "description": "Specifying a valid [BCP 47 language](https://www.w3.org/International/questions/qa-choosing-language-tags#question) helps screen readers announce text properly. [Learn more](https://web.dev/html-lang-valid/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "items": [],
+                        "type": "table",
+                        "headings": []
+                    }
+                },
+                "list": {
+                    "id": "list",
+                    "title": "Lists contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+                    "description": "Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more](https://web.dev/list/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "type": "table",
+                        "headings": [],
+                        "items": []
+                    }
+                },
+                "custom-controls-labels": {
+                    "id": "custom-controls-labels",
+                    "title": "Custom controls have associated labels",
+                    "description": "Custom interactive controls have associated labels, provided by aria-label or aria-labelledby. [Learn more](https://web.dev/custom-controls-labels/).",
+                    "score": null,
+                    "scoreDisplayMode": "manual"
+                },
+                "geolocation-on-start": {
+                    "id": "geolocation-on-start",
+                    "title": "Avoids requesting the geolocation permission on page load",
+                    "description": "Users are mistrustful of or confused by sites that request their location without context. Consider tying the request to a user action instead. [Learn more](https://web.dev/geolocation-on-start/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "items": [],
+                        "headings": [],
+                        "type": "table"
+                    }
+                },
+                "image-aspect-ratio": {
+                    "id": "image-aspect-ratio",
+                    "title": "Displays images with incorrect aspect ratio",
+                    "description": "Image display dimensions should match natural aspect ratio. [Learn more](https://web.dev/image-aspect-ratio/).",
+                    "score": 0,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "headings": [
+                            {
+                                "itemType": "thumbnail",
+                                "key": "url"
+                            },
+                            {
+                                "text": "URL",
+                                "itemType": "url",
+                                "key": "url"
+                            },
+                            {
+                                "key": "displayedAspectRatio",
+                                "itemType": "text",
+                                "text": "Aspect Ratio (Displayed)"
+                            },
+                            {
+                                "text": "Aspect Ratio (Actual)",
+                                "itemType": "text",
+                                "key": "actualAspectRatio"
+                            }
+                        ],
+                        "type": "table",
+                        "items": [
+                            {
+                                "actualAspectRatio": "451 x 538\n        (0.84)",
+                                "doRatiosMatch": false,
+                                "displayedAspectRatio": "45 x 538\n        (0.08)",
+                                "url": "https://www.cyclopt.com/static/media/developer.ffe5e1da.png"
+                            },
+                            {
+                                "doRatiosMatch": false,
+                                "displayedAspectRatio": "45 x 537\n        (0.08)",
+                                "url": "https://www.cyclopt.com/static/media/manager.d94ec1f3.png",
+                                "actualAspectRatio": "451 x 537\n        (0.84)"
+                            }
+                        ]
+                    },
+                    "warnings": []
+                },
+                "logical-tab-order": {
+                    "id": "logical-tab-order",
+                    "title": "The page has a logical tab order",
+                    "description": "Tabbing through the page follows the visual layout. Users cannot focus elements that are offscreen. [Learn more](https://web.dev/logical-tab-order/).",
+                    "score": null,
+                    "scoreDisplayMode": "manual"
+                },
+                "video-description": {
+                    "id": "video-description",
+                    "title": "`<video>` elements contain a `<track>` element with `[kind=\"description\"]`",
+                    "description": "Audio descriptions provide relevant information for videos that dialogue cannot, such as facial expressions and scenes. [Learn more](https://web.dev/video-description/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "is-on-https": {
+                    "id": "is-on-https",
+                    "title": "Uses HTTPS",
+                    "description": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being servedover HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "items": [],
+                        "type": "table",
+                        "headings": []
+                    }
+                },
+                "tabindex": {
+                    "id": "tabindex",
+                    "title": "No element has a `[tabindex]` value greater than 0",
+                    "description": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more](https://web.dev/tabindex/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "aria-toggle-field-name": {
+                    "id": "aria-toggle-field-name",
+                    "title": "ARIA toggle fields have accessible names",
+                    "description": "When a toggle field doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn more](https://web.dev/aria-toggle-field-name/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "no-unload-listeners": {
+                    "id": "no-unload-listeners",
+                    "title": "Avoids `unload` event listeners",
+                    "description": "The `unload` event does not fire reliably and listening for it can prevent browser optimizations like the Back-Forward Cache. Consider using the `pagehide` or `visibilitychange` events instead. [Learn More](https://developers.google.com/web/updates/2018/07/page-lifecycle-api#the-unload-event)",
+                    "score": 1,
+                    "scoreDisplayMode": "binary"
+                },
+                "valid-source-maps": {
+                    "id": "valid-source-maps",
+                    "title": "Missing source maps for large first-party JavaScript",
+                    "description": "Source maps translate minified code to the original source code. This helps developers debug in production. In addition, Lighthouse is able to provide further insights. Consider deploying source maps to take advantage of these benefits. [Learn more](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps).",
+                    "score": 0,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "type": "table",
+                        "headings": [
+                            {
+                                "text": "URL",
+                                "itemType": "url",
+                                "subItemsHeading": {
+                                    "key": "error"
+                                },
+                                "key": "scriptUrl"
+                            },
+                            {
+                                "itemType": "url",
+                                "text": "Map URL",
+                                "key": "sourceMapUrl"
+                            }
+                        ],
+                        "items": [
+                            {
+                                "subItems": {
+                                    "items": [
+                                        {
+                                            "error": "Large JavaScript file is missing a source map"
+                                        }
+                                    ],
+                                    "type": "subitems"
+                                },
+                                "scriptUrl": "https://d33wubrfki0l68.cloudfront.net/bundles/7f9f4b88936ea6e9fa539946610b0743f10fb6b9.js"
+                            }
+                        ]
+                    }
+                },
+                "accesskeys": {
+                    "id": "accesskeys",
+                    "title": "`[accesskey]` values are unique",
+                    "description": "Access keys let users quickly focus a part of the page. For proper navigation, each access key must be unique. [Learn more](https://web.dev/accesskeys/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "label": {
+                    "id": "label",
+                    "title": "Form elements have associated labels",
+                    "description": "Labels ensure that form controls are announced properly by assistive technologies, like screen readers. [Learn more](https://web.dev/label/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "use-landmarks": {
+                    "id": "use-landmarks",
+                    "title": "HTML5 landmark elements are used to improve navigation",
+                    "description": "Landmark elements (<main>, <nav>, etc.) are used to improve the keyboard navigation of the page for assistive technology. [Learn more](https://web.dev/use-landmarks/).",
+                    "score": null,
+                    "scoreDisplayMode": "manual"
+                },
+                "preload-fonts": {
+                    "id": "preload-fonts",
+                    "title": "Fonts with `font-display: optional` are preloaded",
+                    "description": "Preload `optional` fonts so first-time visitors may use them. [Learn More](https://web.dev/preload-optional-fonts/)",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable",
+                    "details": {
+                        "type": "table",
+                        "headings": [],
+                        "items": []
+                    }
+                },
+                "meta-viewport": {
+                    "id": "meta-viewport",
+                    "title": "`[user-scalable=\"no\"]` is not used in the `<meta name=\"viewport\">` element and the `[maximum-scale]` attribute is not less than 5.",
+                    "description": "Disabling zooming is problematic for users with low vision who rely on screen magnification to properly see the contents of a web page. [Learn more](https://web.dev/meta-viewport/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "items": [],
+                        "headings": [],
+                        "type": "table"
+                    }
+                },
+                "layout-table": {
+                    "id": "layout-table",
+                    "title": "Presentational `<table>` elements avoid using `<th>`, `<caption>` or the `[summary]` attribute.",
+                    "description": "A table being used for layout purposes should not include data elements, such as the th or caption elements or the summary attribute, because this can create a confusing experience for screen reader users. [Learn more](https://web.dev/layout-table/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "aria-allowed-attr": {
+                    "id": "aria-allowed-attr",
+                    "title": "`[aria-*]` attributes match their roles",
+                    "description": "Each ARIA `role` supports a specific subset of `aria-*` attributes. Mismatching these invalidates the `aria-*` attributes. [Learn more](https://web.dev/aria-allowed-attr/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "input-image-alt": {
+                    "id": "input-image-alt",
+                    "title": "`<input type=\"image\">` elements have `[alt]` text",
+                    "description": "When an image is being used as an `<input>` button, providing alternative text can help screen reader users understand the purpose of the button. [Learn more](https://web.dev/input-image-alt/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "aria-roles": {
+                    "id": "aria-roles",
+                    "title": "`[role]` values are valid",
+                    "description": "ARIA roles must have valid values in order to perform their intended accessibility functions. [Learn more](https://web.dev/aria-roles/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "image-size-responsive": {
+                    "id": "image-size-responsive",
+                    "title": "Serves images with appropriate resolution",
+                    "description": "Image natural dimensions should be proportional to the display size and the pixel ratio to maximize image clarity. [Learn more](https://web.dev/serve-responsive-images/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "items": [],
+                        "headings": [],
+                        "type": "table"
+                    }
+                },
+                "focus-traps": {
+                    "id": "focus-traps",
+                    "title": "User focus is not accidentally trapped in a region",
+                    "description": "A user can tab into and out of any control or region without accidentally trapping their focus. [Learn more](https://web.dev/focus-traps/).",
+                    "score": null,
+                    "scoreDisplayMode": "manual"
+                },
+                "aria-required-attr": {
+                    "id": "aria-required-attr",
+                    "title": "`[role]`s have all required `[aria-*]` attributes",
+                    "description": "Some ARIA roles have required attributes that describe the state of the element to screen readers. [Learn more](https://web.dev/aria-required-attr/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "image-alt": {
+                    "id": "image-alt",
+                    "title": "Image elements have `[alt]` attributes",
+                    "description": "Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more](https://web.dev/image-alt/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "type": "table",
+                        "headings": [],
+                        "items": []
+                    }
+                },
+                "form-field-multiple-labels": {
+                    "id": "form-field-multiple-labels",
+                    "title": "No form fields have multiple labels",
+                    "description": "Form fields with multiple labels can be confusingly announced by assistive technologies like screen readers which use either the first, the last, or all of the labels. [Learn more](https://web.dev/form-field-multiple-labels/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "link-name": {
+                    "id": "link-name",
+                    "title": "Links do not have a discernible name",
+                    "description": "Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn more](https://web.dev/link-name/).",
+                    "score": 0,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "headings": [
+                            {
+                                "key": "node",
+                                "text": "Failing Elements",
+                                "itemType": "node"
+                            }
+                        ],
+                        "debugData": {
+                            "tags": [
+                                "cat.name-role-value",
+                                "wcag2a",
+                                "wcag412",
+                                "wcag244",
+                                "section508",
+                                "section508.22.a"
+                            ],
+                            "impact": "serious",
+                            "type": "debugdata"
+                        },
+                        "items": [
+                            {
+                                "node": {
+                                    "type": "node",
+                                    "boundingRect": {
+                                        "top": 2343,
+                                        "right": 103,
+                                        "height": 22,
+                                        "left": 64,
+                                        "bottom": 2365,
+                                        "width": 39
+                                    },
+                                    "path": "0,HTML,1,BODY,1,DIV,0,DIV,10,DIV,0,DIV,2,DIV,0,A",
+                                    "snippet": "<a class=\"footerlinks\" href=\"https://www.facebook.com/Cyclopt\" target=\"_blank\" rel=\"noreferrer noopener\"><i class=\"fab fa-facebook-f fa-lg follow\" style=\"padding-left: 11px; padding-right: 11px; margin-left: 0px;\"></i></a>",
+                                    "selector": ".footerlinks[target=\"_blank\"][rel=\"noreferrer\\ noopener\"]:nth-child(1)",
+                                    "nodeLabel": "a",
+                                    "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\""
+                                }
+                            },
+                            {
+                                "node": {
+                                    "boundingRect": {
+                                        "right": 144,
+                                        "top": 2343,
+                                        "bottom": 2365,
+                                        "left": 103,
+                                        "width": 41,
+                                        "height": 22
+                                    },
+                                    "snippet": "<a class=\"footerlinks\" href=\"https://www.linkedin.com/company/cyclopt\" target=\"_blank\" rel=\"noreferrer noopener\"><i class=\"fab fa-linkedin-in fa-lg follow\"></i></a>",
+                                    "selector": ".footerlinks[target=\"_blank\"][rel=\"noreferrer\\ noopener\"]:nth-child(2)",
+                                    "path": "0,HTML,1,BODY,1,DIV,0,DIV,10,DIV,0,DIV,2,DIV,1,A",
+                                    "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+                                    "type": "node",
+                                    "nodeLabel": "a"
+                                }
+                            },
+                            {
+                                "node": {
+                                    "type": "node",
+                                    "snippet": "<a class=\"footerlinks\" href=\"https://twitter.com/cyclopt\" target=\"_blank\" rel=\"noreferrer noopener\"><i class=\"fab fa-twitter fa-lg follow\"></i></a>",
+                                    "nodeLabel": "a",
+                                    "path": "0,HTML,1,BODY,1,DIV,0,DIV,10,DIV,0,DIV,2,DIV,2,A",
+                                    "boundingRect": {
+                                        "top": 2343,
+                                        "width": 43,
+                                        "bottom": 2365,
+                                        "height": 22,
+                                        "left": 144,
+                                        "right": 187
+                                    },
+                                    "selector": "a[href$=\"cyclopt\"]:nth-child(3)",
+                                    "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\""
+                                }
+                            }
+                        ],
+                        "type": "table"
+                    }
+                },
+                "aria-required-children": {
+                    "id": "aria-required-children",
+                    "title": "Elements with an ARIA `[role]` that require children to contain a specific `[role]` have all required children.",
+                    "description": "Some ARIA parent roles must contain specific child roles to perform their intended accessibility functions. [Learn more](https://web.dev/aria-required-children/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "visual-order-follows-dom": {
+                    "id": "visual-order-follows-dom",
+                    "title": "Visual order on the page follows DOM order",
+                    "description": "DOM order matches the visual order, improving navigation for assistive technology. [Learn more](https://web.dev/visual-order-follows-dom/).",
+                    "score": null,
+                    "scoreDisplayMode": "manual"
+                },
+                "dlitem": {
+                    "id": "dlitem",
+                    "title": "Definition list items are wrapped in `<dl>` elements",
+                    "description": "Definition list items (`<dt>` and `<dd>`) must be wrapped in a parent `<dl>` element to ensure that screen readers can properly announce them. [Learn more](https://web.dev/dlitem/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "external-anchors-use-rel-noopener": {
+                    "id": "external-anchors-use-rel-noopener",
+                    "title": "Links to cross-origin destinations are safe",
+                    "description": "Add `rel=\"noopener\"` or `rel=\"noreferrer\"` to any external links to improve performance and prevent security vulnerabilities. [Learn more](https://web.dev/external-anchors-use-rel-noopener/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "type": "table",
+                        "items": [],
+                        "headings": []
+                    },
+                    "warnings": []
+                },
+                "listitem": {
+                    "id": "listitem",
+                    "title": "List items (`<li>`) are contained within `<ul>` or `<ol>` parent elements",
+                    "description": "Screen readers require list items (`<li>`) to be contained within a parent `<ul>` or `<ol>` to be announced properly. [Learn more](https://web.dev/listitem/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "headings": [],
+                        "type": "table",
+                        "items": []
+                    }
+                },
+                "focusable-controls": {
+                    "id": "focusable-controls",
+                    "title": "Interactive controls are keyboard focusable",
+                    "description": "Custom interactive controls are keyboard focusable and display a focus indicator. [Learn more](https://web.dev/focusable-controls/).",
+                    "score": null,
+                    "scoreDisplayMode": "manual"
+                },
+                "password-inputs-can-be-pasted-into": {
+                    "id": "password-inputs-can-be-pasted-into",
+                    "title": "Allows users to paste into password fields",
+                    "description": "Preventing password pasting undermines good security policy. [Learn more](https://web.dev/password-inputs-can-be-pasted-into/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "headings": [],
+                        "type": "table",
+                        "items": []
+                    }
+                },
+                "html-has-lang": {
+                    "id": "html-has-lang",
+                    "title": "`<html>` element has a `[lang]` attribute",
+                    "description": "If a page doesn't specify a lang attribute, a screen reader assumes that the page is in the default language that the user chose when setting up the screen reader. If the page isn't actually in the default language, then the screen reader might not announce the page's text correctly. [Learn more](https://web.dev/html-has-lang/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "type": "table",
+                        "items": [],
+                        "headings": []
+                    }
+                },
+                "aria-valid-attr": {
+                    "id": "aria-valid-attr",
+                    "title": "`[aria-*]` attributes are valid and not misspelled",
+                    "description": "Assistive technologies, like screen readers, can't interpret ARIA attributes with invalid names. [Learn more](https://web.dev/aria-valid-attr/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "object-alt": {
+                    "id": "object-alt",
+                    "title": "`<object>` elements have `[alt]` text",
+                    "description": "Screen readers cannot translate non-text content. Adding alt text to `<object>` elements helps screen readers convey meaning to users. [Learn more](https://web.dev/object-alt/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "managed-focus": {
+                    "id": "managed-focus",
+                    "title": "The user's focus is directed to new content added to the page",
+                    "description": "If new content, such as a dialog, is added to the page, the user's focus is directed to it. [Learn more](https://web.dev/managed-focus/).",
+                    "score": null,
+                    "scoreDisplayMode": "manual"
+                },
+                "document-title": {
+                    "id": "document-title",
+                    "title": "Document has a `<title>` element",
+                    "description": "The title gives screen reader users an overview of the page, and search engine users rely on it heavily to determine if a page is relevant to their search. [Learn more](https://web.dev/document-title/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "headings": [],
+                        "items": [],
+                        "type": "table"
+                    }
+                },
+                "charset": {
+                    "id": "charset",
+                    "title": "Properly defines charset",
+                    "description": "A character encoding declaration is required. It can be done with a <meta> tag in the first 1024 bytes of the HTML or in the Content-Type HTTP response header. [Learn more](https://web.dev/charset/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary"
+                },
+                "aria-required-parent": {
+                    "id": "aria-required-parent",
+                    "title": "`[role]`s are contained by their required parent element",
+                    "description": "Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more](https://web.dev/aria-required-parent/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "offscreen-content-hidden": {
+                    "id": "offscreen-content-hidden",
+                    "title": "Offscreen content is hidden from assistive technology",
+                    "description": "Offscreen content is hidden with display: none or aria-hidden=true. [Learn more](https://web.dev/offscreen-content-hidden/).",
+                    "score": null,
+                    "scoreDisplayMode": "manual"
+                }
+            },
+            "categories": {
+                "accessibility": {
+                    "id": "accessibility",
+                    "title": "Accessibility",
+                    "description": "These checks highlight opportunities to [improve the accessibility of your web app](https://developers.google.com/web/fundamentals/accessibility). Only a subset of accessibility issues can be automatically detected so manual testing is also encouraged.",
+                    "score": 0.73,
+                    "manualDescription": "These items address areas which an automated testing tool cannot cover. Learn more in our guide on [conducting an accessibility review](https://developers.google.com/web/fundamentals/accessibility/how-to-review).",
+                    "auditRefs": [
+                        {
+                            "id": "accesskeys",
+                            "weight": 0,
+                            "group": "a11y-navigation"
+                        },
+                        {
+                            "id": "aria-allowed-attr",
+                            "weight": 0,
+                            "group": "a11y-aria"
+                        },
+                        {
+                            "id": "aria-hidden-body",
+                            "weight": 10,
+                            "group": "a11y-aria"
+                        },
+                        {
+                            "id": "aria-hidden-focus",
+                            "weight": 3,
+                            "group": "a11y-aria"
+                        },
+                        {
+                            "id": "aria-input-field-name",
+                            "weight": 0,
+                            "group": "a11y-aria"
+                        },
+                        {
+                            "id": "aria-required-attr",
+                            "weight": 0,
+                            "group": "a11y-aria"
+                        },
+                        {
+                            "id": "aria-required-children",
+                            "weight": 0,
+                            "group": "a11y-aria"
+                        },
+                        {
+                            "id": "aria-required-parent",
+                            "weight": 0,
+                            "group": "a11y-aria"
+                        },
+                        {
+                            "id": "aria-roles",
+                            "weight": 0,
+                            "group": "a11y-aria"
+                        },
+                        {
+                            "id": "aria-toggle-field-name",
+                            "weight": 0,
+                            "group": "a11y-aria"
+                        },
+                        {
+                            "id": "aria-valid-attr-value",
+                            "weight": 0,
+                            "group": "a11y-aria"
+                        },
+                        {
+                            "id": "aria-valid-attr",
+                            "weight": 0,
+                            "group": "a11y-aria"
+                        },
+                        {
+                            "id": "button-name",
+                            "weight": 10,
+                            "group": "a11y-names-labels"
+                        },
+                        {
+                            "id": "bypass",
+                            "weight": 3,
+                            "group": "a11y-navigation"
+                        },
+                        {
+                            "id": "color-contrast",
+                            "weight": 3,
+                            "group": "a11y-color-contrast"
+                        },
+                        {
+                            "id": "definition-list",
+                            "weight": 0,
+                            "group": "a11y-tables-lists"
+                        },
+                        {
+                            "id": "dlitem",
+                            "weight": 0,
+                            "group": "a11y-tables-lists"
+                        },
+                        {
+                            "id": "document-title",
+                            "weight": 3,
+                            "group": "a11y-names-labels"
+                        },
+                        {
+                            "id": "duplicate-id-active",
+                            "weight": 3,
+                            "group": "a11y-navigation"
+                        },
+                        {
+                            "id": "duplicate-id-aria",
+                            "weight": 10,
+                            "group": "a11y-aria"
+                        },
+                        {
+                            "id": "form-field-multiple-labels",
+                            "weight": 0,
+                            "group": "a11y-names-labels"
+                        },
+                        {
+                            "id": "frame-title",
+                            "weight": 0,
+                            "group": "a11y-names-labels"
+                        },
+                        {
+                            "id": "heading-order",
+                            "weight": 0,
+                            "group": "a11y-navigation"
+                        },
+                        {
+                            "id": "html-has-lang",
+                            "weight": 3,
+                            "group": "a11y-language"
+                        },
+                        {
+                            "id": "html-lang-valid",
+                            "weight": 3,
+                            "group": "a11y-language"
+                        },
+                        {
+                            "id": "image-alt",
+                            "weight": 10,
+                            "group": "a11y-names-labels"
+                        },
+                        {
+                            "id": "input-image-alt",
+                            "weight": 0,
+                            "group": "a11y-names-labels"
+                        },
+                        {
+                            "id": "label",
+                            "weight": 0,
+                            "group": "a11y-names-labels"
+                        },
+                        {
+                            "id": "layout-table",
+                            "weight": 0,
+                            "group": "a11y-tables-lists"
+                        },
+                        {
+                            "id": "link-name",
+                            "weight": 3,
+                            "group": "a11y-names-labels"
+                        },
+                        {
+                            "id": "list",
+                            "weight": 3,
+                            "group": "a11y-tables-lists"
+                        },
+                        {
+                            "id": "listitem",
+                            "weight": 3,
+                            "group": "a11y-tables-lists"
+                        },
+                        {
+                            "id": "meta-refresh",
+                            "weight": 0,
+                            "group": "a11y-best-practices"
+                        },
+                        {
+                            "id": "meta-viewport",
+                            "weight": 10,
+                            "group": "a11y-best-practices"
+                        },
+                        {
+                            "id": "object-alt",
+                            "weight": 0,
+                            "group": "a11y-names-labels"
+                        },
+                        {
+                            "id": "tabindex",
+                            "weight": 0,
+                            "group": "a11y-navigation"
+                        },
+                        {
+                            "id": "td-headers-attr",
+                            "weight": 0,
+                            "group": "a11y-tables-lists"
+                        },
+                        {
+                            "id": "th-has-data-cells",
+                            "weight": 0,
+                            "group": "a11y-tables-lists"
+                        },
+                        {
+                            "id": "valid-lang",
+                            "weight": 0,
+                            "group": "a11y-language"
+                        },
+                        {
+                            "id": "video-caption",
+                            "weight": 0,
+                            "group": "a11y-audio-video"
+                        },
+                        {
+                            "id": "video-description",
+                            "weight": 0,
+                            "group": "a11y-audio-video"
+                        },
+                        {
+                            "id": "logical-tab-order",
+                            "weight": 0
+                        },
+                        {
+                            "id": "focusable-controls",
+                            "weight": 0
+                        },
+                        {
+                            "id": "interactive-element-affordance",
+                            "weight": 0
+                        },
+                        {
+                            "id": "managed-focus",
+                            "weight": 0
+                        },
+                        {
+                            "id": "focus-traps",
+                            "weight": 0
+                        },
+                        {
+                            "id": "custom-controls-labels",
+                            "weight": 0
+                        },
+                        {
+                            "id": "custom-controls-roles",
+                            "weight": 0
+                        },
+                        {
+                            "id": "visual-order-follows-dom",
+                            "weight": 0
+                        },
+                        {
+                            "id": "offscreen-content-hidden",
+                            "weight": 0
+                        },
+                        {
+                            "id": "use-landmarks",
+                            "weight": 0
+                        }
+                    ]
+                },
+                "best-practices": {
+                    "id": "best-practices",
+                    "title": "Best Practices",
+                    "score": 0.86,
+                    "auditRefs": [
+                        {
+                            "id": "is-on-https",
+                            "weight": 1,
+                            "group": "best-practices-trust-safety"
+                        },
+                        {
+                            "id": "external-anchors-use-rel-noopener",
+                            "weight": 1,
+                            "group": "best-practices-trust-safety"
+                        },
+                        {
+                            "id": "geolocation-on-start",
+                            "weight": 1,
+                            "group": "best-practices-trust-safety"
+                        },
+                        {
+                            "id": "notification-on-start",
+                            "weight": 1,
+                            "group": "best-practices-trust-safety"
+                        },
+                        {
+                            "id": "no-vulnerable-libraries",
+                            "weight": 1,
+                            "group": "best-practices-trust-safety"
+                        },
+                        {
+                            "id": "password-inputs-can-be-pasted-into",
+                            "weight": 1,
+                            "group": "best-practices-ux"
+                        },
+                        {
+                            "id": "image-aspect-ratio",
+                            "weight": 1,
+                            "group": "best-practices-ux"
+                        },
+                        {
+                            "id": "image-size-responsive",
+                            "weight": 1,
+                            "group": "best-practices-ux"
+                        },
+                        {
+                            "id": "preload-fonts",
+                            "weight": 0,
+                            "group": "best-practices-ux"
+                        },
+                        {
+                            "id": "doctype",
+                            "weight": 1,
+                            "group": "best-practices-browser-compat"
+                        },
+                        {
+                            "id": "charset",
+                            "weight": 1,
+                            "group": "best-practices-browser-compat"
+                        },
+                        {
+                            "id": "no-unload-listeners",
+                            "weight": 1,
+                            "group": "best-practices-general"
+                        },
+                        {
+                            "id": "appcache-manifest",
+                            "weight": 1,
+                            "group": "best-practices-general"
+                        },
+                        {
+                            "id": "js-libraries",
+                            "weight": 0,
+                            "group": "best-practices-general"
+                        },
+                        {
+                            "id": "deprecations",
+                            "weight": 1,
+                            "group": "best-practices-general"
+                        },
+                        {
+                            "id": "errors-in-console",
+                            "weight": 1,
+                            "group": "best-practices-general"
+                        },
+                        {
+                            "id": "valid-source-maps",
+                            "weight": 0,
+                            "group": "best-practices-general"
+                        }
+                    ]
+                }
+            },
+            "categoryGroups": {
+                "pwa-optimized": {
+                    "title": "PWA Optimized"
+                },
+                "load-opportunities": {
+                    "title": "Opportunities",
+                    "description": "These suggestions can help your page load faster. They don't [directly affect](https://web.dev/performance-scoring/) the Performance score."
+                },
+                "seo-crawl": {
+                    "title": "Crawling and Indexing",
+                    "description": "To appear in search results, crawlers need access to your app."
+                },
+                "budgets": {
+                    "title": "Budgets",
+                    "description": "Performance budgets set standards for the performance of your site."
+                },
+                "seo-content": {
+                    "title": "Content Best Practices",
+                    "description": "Format your HTML in a way that enables crawlers to better understand your app\u2019s content."
+                },
+                "a11y-language": {
+                    "title": "Internationalization and localization",
+                    "description": "These are opportunities to improve the interpretation of your content by users in different locales."
+                },
+                "best-practices-general": {
+                    "title": "General"
+                },
+                "metrics": {
+                    "title": "Metrics"
+                },
+                "pwa-fast-reliable": {
+                    "title": "Fast and reliable"
+                },
+                "a11y-audio-video": {
+                    "title": "Audio and video",
+                    "description": "These are opportunities to provide alternative content for audio and video. This may improve the experience for users with hearing or vision impairments."
+                },
+                "a11y-names-labels": {
+                    "title": "Names and labels",
+                    "description": "These are opportunities to improve the semantics of the controls in your application. This may enhance the experience for users of assistive technology, like a screen reader."
+                },
+                "a11y-tables-lists": {
+                    "title": "Tables and lists",
+                    "description": "These are opportunities to improve the experience of reading tabular or list data using assistive technology, like a screen reader."
+                },
+                "best-practices-trust-safety": {
+                    "title": "Trust and Safety"
+                },
+                "a11y-color-contrast": {
+                    "title": "Contrast",
+                    "description": "These are opportunities to improve the legibility of your content."
+                },
+                "a11y-best-practices": {
+                    "title": "Best practices",
+                    "description": "These items highlight common accessibility best practices."
+                },
+                "a11y-navigation": {
+                    "title": "Navigation",
+                    "description": "These are opportunities to improve keyboard navigation in your application."
+                },
+                "a11y-aria": {
+                    "title": "ARIA",
+                    "description": "These are opportunities to improve the usage of ARIA in your application which may enhance the experience for users of assistive technology, like a screen reader."
+                },
+                "pwa-installable": {
+                    "title": "Installable"
+                },
+                "best-practices-browser-compat": {
+                    "title": "Browser Compatibility"
+                },
+                "best-practices-ux": {
+                    "title": "User Experience"
+                },
+                "diagnostics": {
+                    "title": "Diagnostics",
+                    "description": "More information about the performance of your application. These numbers don't [directly affect](https://web.dev/performance-scoring/) the Performance score."
+                },
+                "seo-mobile": {
+                    "title": "Mobile Friendly",
+                    "description": "Make sure your pages are mobile friendly so users don\u2019t have to pinch or zoom in order to read the content pages. [Learn more](https://developers.google.com/search/mobile-sites/)."
+                }
+            },
+            "timing": {
+                "total": 4971.17
+            },
+            "i18n": {
+                "rendererFormattedStrings": {
+                    "varianceDisclaimer": "Values are estimated and may vary. The [performance score is calculated](https://web.dev/performance-scoring/) directly from these metrics.",
+                    "opportunityResourceColumnLabel": "Opportunity",
+                    "opportunitySavingsColumnLabel": "Estimated Savings",
+                    "errorMissingAuditInfo": "Report error: no audit information",
+                    "errorLabel": "Error!",
+                    "warningHeader": "Warnings: ",
+                    "auditGroupExpandTooltip": "Show audits",
+                    "passedAuditsGroupTitle": "Passed audits",
+                    "notApplicableAuditsGroupTitle": "Not applicable",
+                    "manualAuditsGroupTitle": "Additional items to manually check",
+                    "toplevelWarningsMessage": "There were issues affecting this run of Lighthouse:",
+                    "crcLongestDurationLabel": "Maximum critical path latency:",
+                    "crcInitialNavigation": "Initial Navigation",
+                    "lsPerformanceCategoryDescription": "[Lighthouse](https://developers.google.com/web/tools/lighthouse/) analysis of the current page on an emulated mobile network. Values are estimated and may vary.",
+                    "labDataTitle": "Lab Data"
+                }
+            },
+            "stackPacks": [
+                {
+                    "id": "react",
+                    "title": "React",
+                    "iconDataURL": "data:image/svg+xml,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 841.9 595.3\"%3E %3Cg fill=\"%2361DAFB\"%3E%3Cpath d=\"M666.3 296.5c0-32.5-40.7-63.3-103.1-82.4 14.4-63.6 8-114.2-20.2-130.4-6.5-3.8-14.1-5.6-22.4-5.6v22.3c4.6 0 8.3.9 11.4 2.6 13.6 7.8 19.5 37.5 14.9 75.7-1.1 9.4-2.9 19.3-5.1 29.4-19.6-4.8-41-8.5-63.5-10.9-13.5-18.5-27.5-35.3-41.6-50 32.6-30.3 63.2-46.9 84-46.9V78c-27.5 0-63.5 19.6-99.9 53.6-36.4-33.8-72.4-53.2-99.9-53.2v22.3c20.7 0 51.4 16.5 84 46.6-14 14.7-28 31.4-41.3 49.9-22.6 2.4-44 6.1-63.6 11-2.3-10-4-19.7-5.2-29-4.7-38.2 1.1-67.9 14.6-75.8 3-1.8 6.9-2.6 11.5-2.6V78.5c-8.4 0-16 1.8-22.6 5.6-28.1 16.2-34.4 66.7-19.9 130.1-62.2 19.2-102.7 49.9-102.7 82.3 0 32.5 40.7 63.3 103.1 82.4-14.4 63.6-8 114.2 20.2 130.4 6.5 3.8 14.1 5.6 22.5 5.6 27.5 0 63.5-19.6 99.9-53.6 36.4 33.8 72.4 53.2 99.9 53.2 8.4 0 16-1.8 22.6-5.6 28.1-16.2 34.4-66.7 19.9-130.1 62-19.1 102.5-49.9 102.5-82.3zm-130.2-66.7c-3.7 12.9-8.3 26.2-13.5 39.5-4.1-8-8.4-16-13.1-24-4.6-8-9.5-15.8-14.4-23.4 14.2 2.1 27.9 4.7 41 7.9zm-45.8 106.5c-7.8 13.5-15.8 26.3-24.1 38.2-14.9 1.3-30 2-45.2 2-15.1 0-30.2-.7-45-1.9-8.3-11.9-16.4-24.6-24.2-38-7.6-13.1-14.5-26.4-20.8-39.8 6.2-13.4 13.2-26.8 20.7-39.9 7.8-13.5 15.8-26.3 24.1-38.2 14.9-1.3 30-2 45.2-2 15.1 0 30.2.7 45 1.9 8.3 11.9 16.4 24.6 24.2 38 7.6 13.1 14.5 26.4 20.8 39.8-6.3 13.4-13.2 26.8-20.7 39.9zm32.3-13c5.4 13.4 10 26.8 13.8 39.8-13.1 3.2-26.9 5.9-41.2 8 4.9-7.7 9.8-15.6 14.4-23.7 4.6-8 8.9-16.1 13-24.1zM421.2 430c-9.3-9.6-18.6-20.3-27.8-32 9 .4 18.2.7 27.5.7 9.4 0 18.7-.2 27.8-.7-9 11.7-18.3 22.4-27.5 32zm-74.4-58.9c-14.2-2.1-27.9-4.7-41-7.9 3.7-12.9 8.3-26.2 13.5-39.5 4.1 8 8.4 16 13.1 24 4.7 8 9.5 15.8 14.4 23.4zM420.7 163c9.3 9.6 18.6 20.3 27.8 32-9-.4-18.2-.7-27.5-.7-9.4 0-18.7.2-27.8.7 9-11.7 18.3-22.4 27.5-32zm-74 58.9c-4.9 7.7-9.8 15.6-14.4 23.7-4.6 8-8.9 16-13 24-5.4-13.4-10-26.8-13.8-39.8 13.1-3.1 26.9-5.8 41.2-7.9zm-90.5 125.2c-35.4-15.1-58.3-34.9-58.3-50.6 0-15.7 22.9-35.6 58.3-50.6 8.6-3.7 18-7 27.7-10.1 5.7 19.6 13.2 40 22.5 60.9-9.2 20.8-16.6 41.1-22.2 60.6-9.9-3.1-19.3-6.5-28-10.2zM310 490c-13.6-7.8-19.5-37.5-14.9-75.7 1.1-9.4 2.9-19.3 5.1-29.4 19.6 4.8 41 8.5 63.5 10.9 13.5 18.5 27.5 35.3 41.6 50-32.6 30.3-63.2 46.9-84 46.9-4.5-.1-8.3-1-11.3-2.7zm237.2-76.2c4.7 38.2-1.1 67.9-14.6 75.8-3 1.8-6.9 2.6-11.5 2.6-20.7 0-51.4-16.5-84-46.6 14-14.7 28-31.4 41.3-49.9 22.6-2.4 44-6.1 63.6-11 2.3 10.1 4.1 19.8 5.2 29.1zm38.5-66.7c-8.6 3.7-18 7-27.7 10.1-5.7-19.6-13.2-40-22.5-60.9 9.2-20.8 16.6-41.1 22.2-60.6 9.9 3.1 19.3 6.5 28.1 10.2 35.4 15.1 58.3 34.9 58.3 50.6-.1 15.7-23 35.6-58.4 50.6zM320.8 78.4z\"/%3E %3Ccircle cx=\"420.9\" cy=\"296.5\" r=\"45.7\"/%3E %3Cpath d=\"M520.5 78.1z\"/%3E%3C/g%3E%3C/svg%3E",
+                    "descriptions": {
+                        "dom-size": "Consider using a \u201cwindowing\u201d library like `react-window` to minimize the number of DOM nodes created if you are rendering many repeated elements on the page. [Learn more](https://web.dev/virtualize-long-lists-react-window/). Also, minimize unecessary re-renders using [shouldComponentUpdate](https://reactjs.org/docs/optimizing-performance.html#shouldcomponentupdate-in-action), [PureComponent](https://reactjs.org/docs/react-api.html#reactpurecomponent), or [React.memo](https://reactjs.org/docs/react-api.html#reactmemo) and [skip effects](https://reactjs.org/docs/hooks-effect.html#tip-optimizing-performance-by-skipping-effects) only until certain dependencies have changed if you are using the Effect hook to improve runtime performance.",
+                        "unminified-javascript": "If your build system minifies your JS files automatically, ensure that you are deploying the production build of your application. You can check this with the React Developer Tools extension. [Learn more](https://reactjs.org/docs/optimizing-performance.html#use-the-production-build).",
+                        "unminified-css": "If your build system minifies your CSS files automatically, ensure that you are deploying the production build of your application. You can check this with the React Developer Tools extension. [Learn more](https://reactjs.org/docs/optimizing-performance.html#use-the-production-build).",
+                        "redirects": "If you are using React Router, minimize usage of the `<Redirect>` component for [route navigations](https://reacttraining.com/react-router/web/api/Redirect).",
+                        "unused-javascript": "If you are not server-side rendering, [split your JavaScript bundles](https://web.dev/code-splitting-suspense/) with `React.lazy()`. Otherwise, code-split using a third-party library such as [loadable-components](https://www.smooth-code.com/open-source/loadable-components/docs/getting-started/).",
+                        "user-timings": "Use the React DevTools Profiler, which makes use of the Profiler API, to measure the rendering performance of your components. [Learn more.](https://reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html)",
+                        "server-response-time": "If you are server-side rendering any React components, consider using `renderToNodeStream()` or `renderToStaticNodeStream()` to allow the client to receive and hydrate different parts of the markup instead of all at once. [Learn more](https://reactjs.org/docs/react-dom-server.html#rendertonodestream)."
+                    }
+                }
+            ]
+        },
+        "analysisUTCTimestamp": "2020-11-20T07:04:37.361Z"
+    }
+}{
+    "url": "http://www.dolekemp96.org/",
+    "scan": {
+        "captchaResult": "CAPTCHA_NOT_NEEDED",
+        "kind": "pagespeedonline#result",
+        "id": "http://www.dolekemp96.org/",
+        "loadingExperience": {
+            "id": "http://www.dolekemp96.org/",
+            "metrics": {
+                "CUMULATIVE_LAYOUT_SHIFT_SCORE": {
+                    "percentile": 0,
+                    "distributions": [
+                        {
+                            "min": 0,
+                            "max": 10,
+                            "proportion": 1
+                        },
+                        {
+                            "min": 10,
+                            "max": 25,
+                            "proportion": 0
+                        },
+                        {
+                            "min": 25,
+                            "proportion": 0
+                        }
+                    ],
+                    "category": "FAST"
+                },
+                "LARGEST_CONTENTFUL_PAINT_MS": {
+                    "percentile": 701,
+                    "distributions": [
+                        {
+                            "min": 0,
+                            "max": 2500,
+                            "proportion": 0.9754098360655736
+                        },
+                        {
+                            "min": 2500,
+                            "max": 4000,
+                            "proportion": 0.012880562060889928
+                        },
+                        {
+                            "min": 4000,
+                            "proportion": 0.0117096018735363
+                        }
+                    ],
+                    "category": "FAST"
+                },
+                "FIRST_CONTENTFUL_PAINT_MS": {
+                    "percentile": 476,
+                    "distributions": [
+                        {
+                            "min": 0,
+                            "max": 1000,
+                            "proportion": 0.9084668192219679
+                        },
+                        {
+                            "min": 1000,
+                            "max": 3000,
+                            "proportion": 0.0778032036613272
+                        },
+                        {
+                            "min": 3000,
+                            "proportion": 0.013729977116704805
+                        }
+                    ],
+                    "category": "FAST"
+                },
+                "FIRST_INPUT_DELAY_MS": {
+                    "percentile": 2,
+                    "distributions": [
+                        {
+                            "min": 0,
+                            "max": 100,
+                            "proportion": 0.9965517241379311
+                        },
+                        {
+                            "min": 100,
+                            "max": 300,
+                            "proportion": 0
+                        },
+                        {
+                            "min": 300,
+                            "proportion": 0.0034482758620689655
+                        }
+                    ],
+                    "category": "FAST"
+                }
+            },
+            "overall_category": "FAST",
+            "initial_url": "http://www.dolekemp96.org/"
+        },
+        "originLoadingExperience": {
+            "id": "http://www.dolekemp96.org",
+            "metrics": {
+                "CUMULATIVE_LAYOUT_SHIFT_SCORE": {
+                    "percentile": 0,
+                    "distributions": [
+                        {
+                            "min": 0,
+                            "max": 10,
+                            "proportion": 0.9968115942028987
+                        },
+                        {
+                            "min": 10,
+                            "max": 25,
+                            "proportion": 0.002028985507246377
+                        },
+                        {
+                            "min": 25,
+                            "proportion": 0.0011594202898550724
+                        }
+                    ],
+                    "category": "FAST"
+                },
+                "LARGEST_CONTENTFUL_PAINT_MS": {
+                    "percentile": 493,
+                    "distributions": [
+                        {
+                            "min": 0,
+                            "max": 2500,
+                            "proportion": 0.9845226458129682
+                        },
+                        {
+                            "min": 2500,
+                            "max": 4000,
+                            "proportion": 0.009286412512218964
+                        },
+                        {
+                            "min": 4000,
+                            "proportion": 0.0061909416748126425
+                        }
+                    ],
+                    "category": "FAST"
+                },
+                "FIRST_CONTENTFUL_PAINT_MS": {
+                    "percentile": 381,
+                    "distributions": [
+                        {
+                            "min": 0,
+                            "max": 1000,
+                            "proportion": 0.9399418792379721
+                        },
+                        {
+                            "min": 1000,
+                            "max": 3000,
+                            "proportion": 0.052308685824991916
+                        },
+                        {
+                            "min": 3000,
+                            "proportion": 0.007749434937035842
+                        }
+                    ],
+                    "category": "FAST"
+                },
+                "FIRST_INPUT_DELAY_MS": {
+                    "percentile": 2,
+                    "distributions": [
+                        {
+                            "min": 0,
+                            "max": 100,
+                            "proportion": 0.9963119072708114
+                        },
+                        {
+                            "min": 100,
+                            "max": 300,
+                            "proportion": 0.002107481559536354
+                        },
+                        {
+                            "min": 300,
+                            "proportion": 0.0015806111696522658
+                        }
+                    ],
+                    "category": "FAST"
+                }
+            },
+            "overall_category": "FAST",
+            "initial_url": "http://www.dolekemp96.org/"
+        },
+        "lighthouseResult": {
+            "requestedUrl": "http://www.dolekemp96.org/",
+            "finalUrl": "http://www.dolekemp96.org/",
+            "lighthouseVersion": "6.3.0",
+            "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/85.0.4183.140 Safari/537.36",
+            "fetchTime": "2020-11-20T07:04:44.150Z",
+            "environment": {
+                "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4143.7 Safari/537.36 Chrome-Lighthouse",
+                "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/85.0.4183.140 Safari/537.36",
+                "benchmarkIndex": 861
+            },
+            "runWarnings": [],
+            "configSettings": {
+                "emulatedFormFactor": "desktop",
+                "locale": "en-US",
+                "onlyCategories": [
+                    "accessibility",
+                    "best-practices"
+                ],
+                "channel": "lr"
+            },
+            "audits": {
+                "aria-required-children": {
+                    "id": "aria-required-children",
+                    "title": "Elements with an ARIA `[role]` that require children to contain a specific `[role]` have all required children.",
+                    "description": "Some ARIA parent roles must contain specific child roles to perform their intended accessibility functions. [Learn more](https://web.dev/aria-required-children/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "aria-valid-attr": {
+                    "id": "aria-valid-attr",
+                    "title": "`[aria-*]` attributes are valid and not misspelled",
+                    "description": "Assistive technologies, like screen readers, can't interpret ARIA attributes with invalid names. [Learn more](https://web.dev/aria-valid-attr/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "list": {
+                    "id": "list",
+                    "title": "Lists contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+                    "description": "Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more](https://web.dev/list/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "duplicate-id-aria": {
+                    "id": "duplicate-id-aria",
+                    "title": "ARIA IDs are unique",
+                    "description": "The value of an ARIA ID must be unique to prevent other instances from being overlooked by assistive technologies. [Learn more](https://web.dev/duplicate-id-aria/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "layout-table": {
+                    "id": "layout-table",
+                    "title": "Presentational `<table>` elements avoid using `<th>`, `<caption>` or the `[summary]` attribute.",
+                    "description": "A table being used for layout purposes should not include data elements, such as the th or caption elements or the summary attribute, because this can create a confusing experience for screen reader users. [Learn more](https://web.dev/layout-table/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "meta-viewport": {
+                    "id": "meta-viewport",
+                    "title": "`[user-scalable=\"no\"]` is not used in the `<meta name=\"viewport\">` element and the `[maximum-scale]` attribute is not less than 5.",
+                    "description": "Disabling zooming is problematic for users with low vision who rely on screen magnification to properly see the contents of a web page. [Learn more](https://web.dev/meta-viewport/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "aria-input-field-name": {
+                    "id": "aria-input-field-name",
+                    "title": "ARIA input fields have accessible names",
+                    "description": "When an input field doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn more](https://web.dev/aria-input-field-name/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "th-has-data-cells": {
+                    "id": "th-has-data-cells",
+                    "title": "`<th>` elements and elements with `[role=\"columnheader\"/\"rowheader\"]` have data cells they describe.",
+                    "description": "Screen readers have features to make navigating tables easier. Ensuring table headers always refer to some set of cells may improve the experience for screen reader users. [Learn more](https://web.dev/th-has-data-cells/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "aria-required-attr": {
+                    "id": "aria-required-attr",
+                    "title": "`[role]`s have all required `[aria-*]` attributes",
+                    "description": "Some ARIA roles have required attributes that describe the state of the element to screen readers. [Learn more](https://web.dev/aria-required-attr/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "color-contrast": {
+                    "id": "color-contrast",
+                    "title": "Background and foreground colors have a sufficient contrast ratio",
+                    "description": "Low-contrast text is difficult or impossible for many users to read. [Learn more](https://web.dev/color-contrast/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "type": "table",
+                        "items": [],
+                        "headings": []
+                    }
+                },
+                "video-caption": {
+                    "id": "video-caption",
+                    "title": "`<video>` elements contain a `<track>` element with `[kind=\"captions\"]`",
+                    "description": "When a video provides a caption it is easier for deaf and hearing impaired users to access its information. [Learn more](https://web.dev/video-caption/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "html-has-lang": {
+                    "id": "html-has-lang",
+                    "title": "`<html>` element does not have a `[lang]` attribute",
+                    "description": "If a page doesn't specify a lang attribute, a screen reader assumes that the page is in the default language that the user chose when setting up the screen reader. If the page isn't actually in the default language, then the screen reader might not announce the page's text correctly. [Learn more](https://web.dev/html-has-lang/).",
+                    "score": 0,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "type": "table",
+                        "debugData": {
+                            "tags": [
+                                "cat.language",
+                                "wcag2a",
+                                "wcag311"
+                            ],
+                            "type": "debugdata",
+                            "impact": "serious"
+                        },
+                        "headings": [
+                            {
+                                "key": "node",
+                                "text": "Failing Elements",
+                                "itemType": "node"
+                            }
+                        ],
+                        "items": [
+                            {
+                                "node": {
+                                    "type": "node",
+                                    "selector": "html",
+                                    "nodeLabel": "html",
+                                    "boundingRect": {
+                                        "left": 0,
+                                        "top": 0,
+                                        "bottom": 940,
+                                        "width": 1350,
+                                        "height": 940,
+                                        "right": 1350
+                                    },
+                                    "explanation": "Fix any of the following:\n  The <html> element does not have a lang attribute",
+                                    "snippet": "<html>",
+                                    "path": "0,HTML"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "interactive-element-affordance": {
+                    "id": "interactive-element-affordance",
+                    "title": "Interactive elements indicate their purpose and state",
+                    "description": "Interactive elements, such as links and buttons, should indicate their state and be distinguishable from non-interactive elements. [Learn more](https://web.dev/interactive-element-affordance/).",
+                    "score": null,
+                    "scoreDisplayMode": "manual"
+                },
+                "accesskeys": {
+                    "id": "accesskeys",
+                    "title": "`[accesskey]` values are unique",
+                    "description": "Access keys let users quickly focus a part of the page. For proper navigation, each access key must be unique. [Learn more](https://web.dev/accesskeys/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "preload-fonts": {
+                    "id": "preload-fonts",
+                    "title": "Fonts with `font-display: optional` are preloaded",
+                    "description": "Preload `optional` fonts so first-time visitors may use them. [Learn More](https://web.dev/preload-optional-fonts/)",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable",
+                    "details": {
+                        "headings": [],
+                        "items": [],
+                        "type": "table"
+                    }
+                },
+                "duplicate-id-active": {
+                    "id": "duplicate-id-active",
+                    "title": "`[id]` attributes on active, focusable elements are unique",
+                    "description": "All focusable elements must have a unique `id` to ensure that they're visible to assistive technologies. [Learn more](https://web.dev/duplicate-id-active/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "form-field-multiple-labels": {
+                    "id": "form-field-multiple-labels",
+                    "title": "No form fields have multiple labels",
+                    "description": "Form fields with multiple labels can be confusingly announced by assistive technologies like screen readers which use either the first, the last, or all of the labels. [Learn more](https://web.dev/form-field-multiple-labels/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "custom-controls-labels": {
+                    "id": "custom-controls-labels",
+                    "title": "Custom controls have associated labels",
+                    "description": "Custom interactive controls have associated labels, provided by aria-label or aria-labelledby. [Learn more](https://web.dev/custom-controls-labels/).",
+                    "score": null,
+                    "scoreDisplayMode": "manual"
+                },
+                "js-libraries": {
+                    "id": "js-libraries",
+                    "title": "Detected JavaScript libraries",
+                    "description": "All front-end JavaScript libraries detected on the page. [Learn more](https://web.dev/js-libraries/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "summary": {},
+                        "type": "table",
+                        "items": [],
+                        "debugData": {
+                            "stacks": [],
+                            "type": "debugdata"
+                        },
+                        "headings": []
+                    }
+                },
+                "focusable-controls": {
+                    "id": "focusable-controls",
+                    "title": "Interactive controls are keyboard focusable",
+                    "description": "Custom interactive controls are keyboard focusable and display a focus indicator. [Learn more](https://web.dev/focusable-controls/).",
+                    "score": null,
+                    "scoreDisplayMode": "manual"
+                },
+                "aria-allowed-attr": {
+                    "id": "aria-allowed-attr",
+                    "title": "`[aria-*]` attributes match their roles",
+                    "description": "Each ARIA `role` supports a specific subset of `aria-*` attributes. Mismatching these invalidates the `aria-*` attributes. [Learn more](https://web.dev/aria-allowed-attr/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "aria-roles": {
+                    "id": "aria-roles",
+                    "title": "`[role]` values are valid",
+                    "description": "ARIA roles must have valid values in order to perform their intended accessibility functions. [Learn more](https://web.dev/aria-roles/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "offscreen-content-hidden": {
+                    "id": "offscreen-content-hidden",
+                    "title": "Offscreen content is hidden from assistive technology",
+                    "description": "Offscreen content is hidden with display: none or aria-hidden=true. [Learn more](https://web.dev/offscreen-content-hidden/).",
+                    "score": null,
+                    "scoreDisplayMode": "manual"
+                },
+                "tabindex": {
+                    "id": "tabindex",
+                    "title": "No element has a `[tabindex]` value greater than 0",
+                    "description": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more](https://web.dev/tabindex/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "geolocation-on-start": {
+                    "id": "geolocation-on-start",
+                    "title": "Avoids requesting the geolocation permission on page load",
+                    "description": "Users are mistrustful of or confused by sites that request their location without context. Consider tying the request to a user action instead. [Learn more](https://web.dev/geolocation-on-start/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "type": "table",
+                        "items": [],
+                        "headings": []
+                    }
+                },
+                "heading-order": {
+                    "id": "heading-order",
+                    "title": "Heading elements appear in a sequentially-descending order",
+                    "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more](https://web.dev/heading-order/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "is-on-https": {
+                    "id": "is-on-https",
+                    "title": "Does not use HTTPS",
+                    "description": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being servedover HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/).",
+                    "score": 0,
+                    "scoreDisplayMode": "binary",
+                    "displayValue": "4 insecure requests found",
+                    "details": {
+                        "items": [
+                            {
+                                "resolution": "Allowed",
+                                "url": "http://www.dolekemp96.org/"
+                            },
+                            {
+                                "resolution": "Allowed",
+                                "url": "http://www.dolekemp96.org/dolekemp96org.jpg"
+                            },
+                            {
+                                "resolution": "Allowed",
+                                "url": "http://www.dolekemp96.org/wbumper.gif"
+                            },
+                            {
+                                "url": "http://www.dolekemp96.org/logo.jpg",
+                                "resolution": "Allowed"
+                            }
+                        ],
+                        "type": "table",
+                        "headings": [
+                            {
+                                "itemType": "url",
+                                "key": "url",
+                                "text": "Insecure URL"
+                            }
+                        ]
+                    }
+                },
+                "aria-hidden-body": {
+                    "id": "aria-hidden-body",
+                    "title": "`[aria-hidden=\"true\"]` is not present on the document `<body>`",
+                    "description": "Assistive technologies, like screen readers, work inconsistently when `aria-hidden=\"true\"` is set on the document `<body>`. [Learn more](https://web.dev/aria-hidden-body/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "headings": [],
+                        "type": "table",
+                        "items": []
+                    }
+                },
+                "label": {
+                    "id": "label",
+                    "title": "Form elements have associated labels",
+                    "description": "Labels ensure that form controls are announced properly by assistive technologies, like screen readers. [Learn more](https://web.dev/label/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "document-title": {
+                    "id": "document-title",
+                    "title": "Document has a `<title>` element",
+                    "description": "The title gives screen reader users an overview of the page, and search engine users rely on it heavily to determine if a page is relevant to their search. [Learn more](https://web.dev/document-title/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "type": "table",
+                        "items": [],
+                        "headings": []
+                    }
+                },
+                "bypass": {
+                    "id": "bypass",
+                    "title": "The page does not contain a heading, skip link, or landmark region",
+                    "description": "Adding ways to bypass repetitive content lets keyboard users navigate the page more efficiently. [Learn more](https://web.dev/bypass/).",
+                    "score": 0,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "items": [
+                            {
+                                "node": {
+                                    "explanation": "Fix any of the following:\n  No valid skip link found\n  Page does not have a heading\n  Page does not have a landmark region",
+                                    "snippet": "<html>",
+                                    "boundingRect": {
+                                        "bottom": 940,
+                                        "width": 1350,
+                                        "height": 940,
+                                        "left": 0,
+                                        "top": 0,
+                                        "right": 1350
+                                    },
+                                    "nodeLabel": "html",
+                                    "selector": "html",
+                                    "path": "0,HTML",
+                                    "type": "node"
+                                }
+                            }
+                        ],
+                        "type": "table",
+                        "debugData": {
+                            "tags": [
+                                "cat.keyboard",
+                                "wcag2a",
+                                "wcag241",
+                                "section508",
+                                "section508.22.o"
+                            ],
+                            "impact": "serious",
+                            "type": "debugdata"
+                        },
+                        "headings": [
+                            {
+                                "key": "node",
+                                "itemType": "node",
+                                "text": "Failing Elements"
+                            }
+                        ]
+                    }
+                },
+                "video-description": {
+                    "id": "video-description",
+                    "title": "`<video>` elements contain a `<track>` element with `[kind=\"description\"]`",
+                    "description": "Audio descriptions provide relevant information for videos that dialogue cannot, such as facial expressions and scenes. [Learn more](https://web.dev/video-description/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "visual-order-follows-dom": {
+                    "id": "visual-order-follows-dom",
+                    "title": "Visual order on the page follows DOM order",
+                    "description": "DOM order matches the visual order, improving navigation for assistive technology. [Learn more](https://web.dev/visual-order-follows-dom/).",
+                    "score": null,
+                    "scoreDisplayMode": "manual"
+                },
+                "link-name": {
+                    "id": "link-name",
+                    "title": "Links have a discernible name",
+                    "description": "Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn more](https://web.dev/link-name/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "headings": [],
+                        "items": [],
+                        "type": "table"
+                    }
+                },
+                "image-size-responsive": {
+                    "id": "image-size-responsive",
+                    "title": "Serves images with appropriate resolution",
+                    "description": "Image natural dimensions should be proportional to the display size and the pixel ratio to maximize image clarity. [Learn more](https://web.dev/serve-responsive-images/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "type": "table",
+                        "headings": [],
+                        "items": []
+                    }
+                },
+                "use-landmarks": {
+                    "id": "use-landmarks",
+                    "title": "HTML5 landmark elements are used to improve navigation",
+                    "description": "Landmark elements (<main>, <nav>, etc.) are used to improve the keyboard navigation of the page for assistive technology. [Learn more](https://web.dev/use-landmarks/).",
+                    "score": null,
+                    "scoreDisplayMode": "manual"
+                },
+                "aria-hidden-focus": {
+                    "id": "aria-hidden-focus",
+                    "title": "`[aria-hidden=\"true\"]` elements do not contain focusable descendents",
+                    "description": "Focusable descendents within an `[aria-hidden=\"true\"]` element prevent those interactive elements from being available to users of assistive technologies like screen readers. [Learn more](https://web.dev/aria-hidden-focus/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "charset": {
+                    "id": "charset",
+                    "title": "Properly defines charset",
+                    "description": "A character encoding declaration is required. It can be done with a <meta> tag in the first 1024 bytes of the HTML or in the Content-Type HTTP response header. [Learn more](https://web.dev/charset/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary"
+                },
+                "notification-on-start": {
+                    "id": "notification-on-start",
+                    "title": "Avoids requesting the notification permission on page load",
+                    "description": "Users are mistrustful of or confused by sites that request to send notifications without context. Consider tying the request to user gestures instead. [Learn more](https://web.dev/notification-on-start/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "type": "table",
+                        "headings": [],
+                        "items": []
+                    }
+                },
+                "appcache-manifest": {
+                    "id": "appcache-manifest",
+                    "title": "Avoids Application Cache",
+                    "description": "Application Cache is deprecated. [Learn more](https://web.dev/appcache-manifest/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary"
+                },
+                "object-alt": {
+                    "id": "object-alt",
+                    "title": "`<object>` elements have `[alt]` text",
+                    "description": "Screen readers cannot translate non-text content. Adding alt text to `<object>` elements helps screen readers convey meaning to users. [Learn more](https://web.dev/object-alt/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "aria-toggle-field-name": {
+                    "id": "aria-toggle-field-name",
+                    "title": "ARIA toggle fields have accessible names",
+                    "description": "When a toggle field doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn more](https://web.dev/aria-toggle-field-name/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "image-aspect-ratio": {
+                    "id": "image-aspect-ratio",
+                    "title": "Displays images with correct aspect ratio",
+                    "description": "Image display dimensions should match natural aspect ratio. [Learn more](https://web.dev/image-aspect-ratio/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "type": "table",
+                        "items": [],
+                        "headings": []
+                    },
+                    "warnings": []
+                },
+                "doctype": {
+                    "id": "doctype",
+                    "title": "Page lacks the HTML doctype, thus triggering quirks-mode",
+                    "description": "Specifying a doctype prevents the browser from switching to quirks-mode. [Learn more](https://web.dev/doctype/).",
+                    "score": 0,
+                    "scoreDisplayMode": "binary",
+                    "explanation": "Document must contain a doctype"
+                },
+                "no-vulnerable-libraries": {
+                    "id": "no-vulnerable-libraries",
+                    "title": "Avoids front-end JavaScript libraries with known security vulnerabilities",
+                    "description": "Some third-party scripts may contain known security vulnerabilities that are easily identified and exploited by attackers. [Learn more](https://web.dev/no-vulnerable-libraries/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary"
+                },
+                "no-unload-listeners": {
+                    "id": "no-unload-listeners",
+                    "title": "Avoids `unload` event listeners",
+                    "description": "The `unload` event does not fire reliably and listening for it can prevent browser optimizations like the Back-Forward Cache. Consider using the `pagehide` or `visibilitychange` events instead. [Learn More](https://developers.google.com/web/updates/2018/07/page-lifecycle-api#the-unload-event)",
+                    "score": 1,
+                    "scoreDisplayMode": "binary"
+                },
+                "logical-tab-order": {
+                    "id": "logical-tab-order",
+                    "title": "The page has a logical tab order",
+                    "description": "Tabbing through the page follows the visual layout. Users cannot focus elements that are offscreen. [Learn more](https://web.dev/logical-tab-order/).",
+                    "score": null,
+                    "scoreDisplayMode": "manual"
+                },
+                "dlitem": {
+                    "id": "dlitem",
+                    "title": "Definition list items are wrapped in `<dl>` elements",
+                    "description": "Definition list items (`<dt>` and `<dd>`) must be wrapped in a parent `<dl>` element to ensure that screen readers can properly announce them. [Learn more](https://web.dev/dlitem/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "image-alt": {
+                    "id": "image-alt",
+                    "title": "Image elements have `[alt]` attributes",
+                    "description": "Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more](https://web.dev/image-alt/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "type": "table",
+                        "items": [],
+                        "headings": []
+                    }
+                },
+                "aria-valid-attr-value": {
+                    "id": "aria-valid-attr-value",
+                    "title": "`[aria-*]` attributes have valid values",
+                    "description": "Assistive technologies, like screen readers, can't interpret ARIA attributes with invalid values. [Learn more](https://web.dev/aria-valid-attr-value/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "errors-in-console": {
+                    "id": "errors-in-console",
+                    "title": "No browser errors logged to the console",
+                    "description": "Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser concerns. [Learn more](https://web.dev/errors-in-console/)",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "items": [],
+                        "type": "table",
+                        "headings": []
+                    }
+                },
+                "frame-title": {
+                    "id": "frame-title",
+                    "title": "`<frame>` or `<iframe>` elements have a title",
+                    "description": "Screen reader users rely on frame titles to describe the contents of frames. [Learn more](https://web.dev/frame-title/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "button-name": {
+                    "id": "button-name",
+                    "title": "Buttons have an accessible name",
+                    "description": "When a button doesn't have an accessible name, screen readers announce it as \"button\", making it unusable for users who rely on screen readers. [Learn more](https://web.dev/button-name/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "password-inputs-can-be-pasted-into": {
+                    "id": "password-inputs-can-be-pasted-into",
+                    "title": "Allows users to paste into password fields",
+                    "description": "Preventing password pasting undermines good security policy. [Learn more](https://web.dev/password-inputs-can-be-pasted-into/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "items": [],
+                        "type": "table",
+                        "headings": []
+                    }
+                },
+                "td-headers-attr": {
+                    "id": "td-headers-attr",
+                    "title": "Cells in a `<table>` element that use the `[headers]` attribute refer to table cells within the same table.",
+                    "description": "Screen readers have features to make navigating tables easier. Ensuring `<td>` cells using the `[headers]` attribute only refer to other cells in the same table may improve the experience for screen reader users. [Learn more](https://web.dev/td-headers-attr/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "deprecations": {
+                    "id": "deprecations",
+                    "title": "Avoids deprecated APIs",
+                    "description": "Deprecated APIs will eventually be removed from the browser. [Learn more](https://web.dev/deprecations/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "items": [],
+                        "headings": [],
+                        "type": "table"
+                    }
+                },
+                "meta-refresh": {
+                    "id": "meta-refresh",
+                    "title": "The document does not use `<meta http-equiv=\"refresh\">`",
+                    "description": "Users do not expect a page to refresh automatically, and doing so will move focus back to the top of the page. This may create a frustrating or confusing experience. [Learn more](https://web.dev/meta-refresh/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "aria-required-parent": {
+                    "id": "aria-required-parent",
+                    "title": "`[role]`s are contained by their required parent element",
+                    "description": "Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more](https://web.dev/aria-required-parent/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "input-image-alt": {
+                    "id": "input-image-alt",
+                    "title": "`<input type=\"image\">` elements have `[alt]` text",
+                    "description": "When an image is being used as an `<input>` button, providing alternative text can help screen reader users understand the purpose of the button. [Learn more](https://web.dev/input-image-alt/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "external-anchors-use-rel-noopener": {
+                    "id": "external-anchors-use-rel-noopener",
+                    "title": "Links to cross-origin destinations are safe",
+                    "description": "Add `rel=\"noopener\"` or `rel=\"noreferrer\"` to any external links to improve performance and prevent security vulnerabilities. [Learn more](https://web.dev/external-anchors-use-rel-noopener/).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "type": "table",
+                        "headings": [],
+                        "items": []
+                    },
+                    "warnings": []
+                },
+                "custom-controls-roles": {
+                    "id": "custom-controls-roles",
+                    "title": "Custom controls have ARIA roles",
+                    "description": "Custom interactive controls have appropriate ARIA roles. [Learn more](https://web.dev/custom-control-roles/).",
+                    "score": null,
+                    "scoreDisplayMode": "manual"
+                },
+                "focus-traps": {
+                    "id": "focus-traps",
+                    "title": "User focus is not accidentally trapped in a region",
+                    "description": "A user can tab into and out of any control or region without accidentally trapping their focus. [Learn more](https://web.dev/focus-traps/).",
+                    "score": null,
+                    "scoreDisplayMode": "manual"
+                },
+                "definition-list": {
+                    "id": "definition-list",
+                    "title": "`<dl>`'s contain only properly-ordered `<dt>` and `<dd>` groups, `<script>`, `<template>` or `<div>` elements.",
+                    "description": "When definition lists are not properly marked up, screen readers may produce confusing or inaccurate output. [Learn more](https://web.dev/definition-list/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "valid-lang": {
+                    "id": "valid-lang",
+                    "title": "`[lang]` attributes have a valid value",
+                    "description": "Specifying a valid [BCP 47 language](https://www.w3.org/International/questions/qa-choosing-language-tags#question) on elements helps ensure that text is pronounced correctly by a screen reader. [Learn more](https://web.dev/valid-lang/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "html-lang-valid": {
+                    "id": "html-lang-valid",
+                    "title": "`<html>` element has a valid value for its `[lang]` attribute",
+                    "description": "Specifying a valid [BCP 47 language](https://www.w3.org/International/questions/qa-choosing-language-tags#question) helps screen readers announce text properly. [Learn more](https://web.dev/html-lang-valid/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "listitem": {
+                    "id": "listitem",
+                    "title": "List items (`<li>`) are contained within `<ul>` or `<ol>` parent elements",
+                    "description": "Screen readers require list items (`<li>`) to be contained within a parent `<ul>` or `<ol>` to be announced properly. [Learn more](https://web.dev/listitem/).",
+                    "score": null,
+                    "scoreDisplayMode": "notApplicable"
+                },
+                "managed-focus": {
+                    "id": "managed-focus",
+                    "title": "The user's focus is directed to new content added to the page",
+                    "description": "If new content, such as a dialog, is added to the page, the user's focus is directed to it. [Learn more](https://web.dev/managed-focus/).",
+                    "score": null,
+                    "scoreDisplayMode": "manual"
+                },
+                "valid-source-maps": {
+                    "id": "valid-source-maps",
+                    "title": "Page has valid source maps",
+                    "description": "Source maps translate minified code to the original source code. This helps developers debug in production. In addition, Lighthouse is able to provide further insights. Consider deploying source maps to take advantage of these benefits. [Learn more](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps).",
+                    "score": 1,
+                    "scoreDisplayMode": "binary",
+                    "details": {
+                        "type": "table",
+                        "headings": [],
+                        "items": []
+                    }
+                }
+            },
+            "categories": {
+                "accessibility": {
+                    "id": "accessibility",
+                    "title": "Accessibility",
+                    "description": "These checks highlight opportunities to [improve the accessibility of your web app](https://developers.google.com/web/fundamentals/accessibility). Only a subset of accessibility issues can be automatically detected so manual testing is also encouraged.",
+                    "score": 0.83,
+                    "manualDescription": "These items address areas which an automated testing tool cannot cover. Learn more in our guide on [conducting an accessibility review](https://developers.google.com/web/fundamentals/accessibility/how-to-review).",
+                    "auditRefs": [
+                        {
+                            "id": "accesskeys",
+                            "weight": 0,
+                            "group": "a11y-navigation"
+                        },
+                        {
+                            "id": "aria-allowed-attr",
+                            "weight": 0,
+                            "group": "a11y-aria"
+                        },
+                        {
+                            "id": "aria-hidden-body",
+                            "weight": 10,
+                            "group": "a11y-aria"
+                        },
+                        {
+                            "id": "aria-hidden-focus",
+                            "weight": 0,
+                            "group": "a11y-aria"
+                        },
+                        {
+                            "id": "aria-input-field-name",
+                            "weight": 0,
+                            "group": "a11y-aria"
+                        },
+                        {
+                            "id": "aria-required-attr",
+                            "weight": 0,
+                            "group": "a11y-aria"
+                        },
+                        {
+                            "id": "aria-required-children",
+                            "weight": 0,
+                            "group": "a11y-aria"
+                        },
+                        {
+                            "id": "aria-required-parent",
+                            "weight": 0,
+                            "group": "a11y-aria"
+                        },
+                        {
+                            "id": "aria-roles",
+                            "weight": 0,
+                            "group": "a11y-aria"
+                        },
+                        {
+                            "id": "aria-toggle-field-name",
+                            "weight": 0,
+                            "group": "a11y-aria"
+                        },
+                        {
+                            "id": "aria-valid-attr-value",
+                            "weight": 0,
+                            "group": "a11y-aria"
+                        },
+                        {
+                            "id": "aria-valid-attr",
+                            "weight": 0,
+                            "group": "a11y-aria"
+                        },
+                        {
+                            "id": "button-name",
+                            "weight": 0,
+                            "group": "a11y-names-labels"
+                        },
+                        {
+                            "id": "bypass",
+                            "weight": 3,
+                            "group": "a11y-navigation"
+                        },
+                        {
+                            "id": "color-contrast",
+                            "weight": 3,
+                            "group": "a11y-color-contrast"
+                        },
+                        {
+                            "id": "definition-list",
+                            "weight": 0,
+                            "group": "a11y-tables-lists"
+                        },
+                        {
+                            "id": "dlitem",
+                            "weight": 0,
+                            "group": "a11y-tables-lists"
+                        },
+                        {
+                            "id": "document-title",
+                            "weight": 3,
+                            "group": "a11y-names-labels"
+                        },
+                        {
+                            "id": "duplicate-id-active",
+                            "weight": 0,
+                            "group": "a11y-navigation"
+                        },
+                        {
+                            "id": "duplicate-id-aria",
+                            "weight": 0,
+                            "group": "a11y-aria"
+                        },
+                        {
+                            "id": "form-field-multiple-labels",
+                            "weight": 0,
+                            "group": "a11y-names-labels"
+                        },
+                        {
+                            "id": "frame-title",
+                            "weight": 0,
+                            "group": "a11y-names-labels"
+                        },
+                        {
+                            "id": "heading-order",
+                            "weight": 0,
+                            "group": "a11y-navigation"
+                        },
+                        {
+                            "id": "html-has-lang",
+                            "weight": 3,
+                            "group": "a11y-language"
+                        },
+                        {
+                            "id": "html-lang-valid",
+                            "weight": 0,
+                            "group": "a11y-language"
+                        },
+                        {
+                            "id": "image-alt",
+                            "weight": 10,
+                            "group": "a11y-names-labels"
+                        },
+                        {
+                            "id": "input-image-alt",
+                            "weight": 0,
+                            "group": "a11y-names-labels"
+                        },
+                        {
+                            "id": "label",
+                            "weight": 0,
+                            "group": "a11y-names-labels"
+                        },
+                        {
+                            "id": "layout-table",
+                            "weight": 0,
+                            "group": "a11y-tables-lists"
+                        },
+                        {
+                            "id": "link-name",
+                            "weight": 3,
+                            "group": "a11y-names-labels"
+                        },
+                        {
+                            "id": "list",
+                            "weight": 0,
+                            "group": "a11y-tables-lists"
+                        },
+                        {
+                            "id": "listitem",
+                            "weight": 0,
+                            "group": "a11y-tables-lists"
+                        },
+                        {
+                            "id": "meta-refresh",
+                            "weight": 0,
+                            "group": "a11y-best-practices"
+                        },
+                        {
+                            "id": "meta-viewport",
+                            "weight": 0,
+                            "group": "a11y-best-practices"
+                        },
+                        {
+                            "id": "object-alt",
+                            "weight": 0,
+                            "group": "a11y-names-labels"
+                        },
+                        {
+                            "id": "tabindex",
+                            "weight": 0,
+                            "group": "a11y-navigation"
+                        },
+                        {
+                            "id": "td-headers-attr",
+                            "weight": 0,
+                            "group": "a11y-tables-lists"
+                        },
+                        {
+                            "id": "th-has-data-cells",
+                            "weight": 0,
+                            "group": "a11y-tables-lists"
+                        },
+                        {
+                            "id": "valid-lang",
+                            "weight": 0,
+                            "group": "a11y-language"
+                        },
+                        {
+                            "id": "video-caption",
+                            "weight": 0,
+                            "group": "a11y-audio-video"
+                        },
+                        {
+                            "id": "video-description",
+                            "weight": 0,
+                            "group": "a11y-audio-video"
+                        },
+                        {
+                            "id": "logical-tab-order",
+                            "weight": 0
+                        },
+                        {
+                            "id": "focusable-controls",
+                            "weight": 0
+                        },
+                        {
+                            "id": "interactive-element-affordance",
+                            "weight": 0
+                        },
+                        {
+                            "id": "managed-focus",
+                            "weight": 0
+                        },
+                        {
+                            "id": "focus-traps",
+                            "weight": 0
+                        },
+                        {
+                            "id": "custom-controls-labels",
+                            "weight": 0
+                        },
+                        {
+                            "id": "custom-controls-roles",
+                            "weight": 0
+                        },
+                        {
+                            "id": "visual-order-follows-dom",
+                            "weight": 0
+                        },
+                        {
+                            "id": "offscreen-content-hidden",
+                            "weight": 0
+                        },
+                        {
+                            "id": "use-landmarks",
+                            "weight": 0
+                        }
+                    ]
+                },
+                "best-practices": {
+                    "id": "best-practices",
+                    "title": "Best Practices",
+                    "score": 0.86,
+                    "auditRefs": [
+                        {
+                            "id": "is-on-https",
+                            "weight": 1,
+                            "group": "best-practices-trust-safety"
+                        },
+                        {
+                            "id": "external-anchors-use-rel-noopener",
+                            "weight": 1,
+                            "group": "best-practices-trust-safety"
+                        },
+                        {
+                            "id": "geolocation-on-start",
+                            "weight": 1,
+                            "group": "best-practices-trust-safety"
+                        },
+                        {
+                            "id": "notification-on-start",
+                            "weight": 1,
+                            "group": "best-practices-trust-safety"
+                        },
+                        {
+                            "id": "no-vulnerable-libraries",
+                            "weight": 1,
+                            "group": "best-practices-trust-safety"
+                        },
+                        {
+                            "id": "password-inputs-can-be-pasted-into",
+                            "weight": 1,
+                            "group": "best-practices-ux"
+                        },
+                        {
+                            "id": "image-aspect-ratio",
+                            "weight": 1,
+                            "group": "best-practices-ux"
+                        },
+                        {
+                            "id": "image-size-responsive",
+                            "weight": 1,
+                            "group": "best-practices-ux"
+                        },
+                        {
+                            "id": "preload-fonts",
+                            "weight": 0,
+                            "group": "best-practices-ux"
+                        },
+                        {
+                            "id": "doctype",
+                            "weight": 1,
+                            "group": "best-practices-browser-compat"
+                        },
+                        {
+                            "id": "charset",
+                            "weight": 1,
+                            "group": "best-practices-browser-compat"
+                        },
+                        {
+                            "id": "no-unload-listeners",
+                            "weight": 1,
+                            "group": "best-practices-general"
+                        },
+                        {
+                            "id": "appcache-manifest",
+                            "weight": 1,
+                            "group": "best-practices-general"
+                        },
+                        {
+                            "id": "js-libraries",
+                            "weight": 0,
+                            "group": "best-practices-general"
+                        },
+                        {
+                            "id": "deprecations",
+                            "weight": 1,
+                            "group": "best-practices-general"
+                        },
+                        {
+                            "id": "errors-in-console",
+                            "weight": 1,
+                            "group": "best-practices-general"
+                        },
+                        {
+                            "id": "valid-source-maps",
+                            "weight": 0,
+                            "group": "best-practices-general"
+                        }
+                    ]
+                }
+            },
+            "categoryGroups": {
+                "seo-content": {
+                    "title": "Content Best Practices",
+                    "description": "Format your HTML in a way that enables crawlers to better understand your app\u2019s content."
+                },
+                "a11y-best-practices": {
+                    "title": "Best practices",
+                    "description": "These items highlight common accessibility best practices."
+                },
+                "budgets": {
+                    "title": "Budgets",
+                    "description": "Performance budgets set standards for the performance of your site."
+                },
+                "diagnostics": {
+                    "title": "Diagnostics",
+                    "description": "More information about the performance of your application. These numbers don't [directly affect](https://web.dev/performance-scoring/) the Performance score."
+                },
+                "seo-mobile": {
+                    "title": "Mobile Friendly",
+                    "description": "Make sure your pages are mobile friendly so users don\u2019t have to pinch or zoom in order to read the content pages. [Learn more](https://developers.google.com/search/mobile-sites/)."
+                },
+                "pwa-optimized": {
+                    "title": "PWA Optimized"
+                },
+                "a11y-color-contrast": {
+                    "title": "Contrast",
+                    "description": "These are opportunities to improve the legibility of your content."
+                },
+                "load-opportunities": {
+                    "title": "Opportunities",
+                    "description": "These suggestions can help your page load faster. They don't [directly affect](https://web.dev/performance-scoring/) the Performance score."
+                },
+                "best-practices-browser-compat": {
+                    "title": "Browser Compatibility"
+                },
+                "seo-crawl": {
+                    "title": "Crawling and Indexing",
+                    "description": "To appear in search results, crawlers need access to your app."
+                },
+                "a11y-navigation": {
+                    "title": "Navigation",
+                    "description": "These are opportunities to improve keyboard navigation in your application."
+                },
+                "a11y-language": {
+                    "title": "Internationalization and localization",
+                    "description": "These are opportunities to improve the interpretation of your content by users in different locales."
+                },
+                "a11y-names-labels": {
+                    "title": "Names and labels",
+                    "description": "These are opportunities to improve the semantics of the controls in your application. This may enhance the experience for users of assistive technology, like a screen reader."
+                },
+                "pwa-fast-reliable": {
+                    "title": "Fast and reliable"
+                },
+                "metrics": {
+                    "title": "Metrics"
+                },
+                "best-practices-ux": {
+                    "title": "User Experience"
+                },
+                "a11y-aria": {
+                    "title": "ARIA",
+                    "description": "These are opportunities to improve the usage of ARIA in your application which may enhance the experience for users of assistive technology, like a screen reader."
+                },
+                "best-practices-general": {
+                    "title": "General"
+                },
+                "a11y-audio-video": {
+                    "title": "Audio and video",
+                    "description": "These are opportunities to provide alternative content for audio and video. This may improve the experience for users with hearing or vision impairments."
+                },
+                "best-practices-trust-safety": {
+                    "title": "Trust and Safety"
+                },
+                "pwa-installable": {
+                    "title": "Installable"
+                },
+                "a11y-tables-lists": {
+                    "title": "Tables and lists",
+                    "description": "These are opportunities to improve the experience of reading tabular or list data using assistive technology, like a screen reader."
+                }
+            },
+            "timing": {
+                "total": 3760.9
+            },
+            "i18n": {
+                "rendererFormattedStrings": {
+                    "varianceDisclaimer": "Values are estimated and may vary. The [performance score is calculated](https://web.dev/performance-scoring/) directly from these metrics.",
+                    "opportunityResourceColumnLabel": "Opportunity",
+                    "opportunitySavingsColumnLabel": "Estimated Savings",
+                    "errorMissingAuditInfo": "Report error: no audit information",
+                    "errorLabel": "Error!",
+                    "warningHeader": "Warnings: ",
+                    "auditGroupExpandTooltip": "Show audits",
+                    "passedAuditsGroupTitle": "Passed audits",
+                    "notApplicableAuditsGroupTitle": "Not applicable",
+                    "manualAuditsGroupTitle": "Additional items to manually check",
+                    "toplevelWarningsMessage": "There were issues affecting this run of Lighthouse:",
+                    "crcLongestDurationLabel": "Maximum critical path latency:",
+                    "crcInitialNavigation": "Initial Navigation",
+                    "lsPerformanceCategoryDescription": "[Lighthouse](https://developers.google.com/web/tools/lighthouse/) analysis of the current page on an emulated mobile network. Values are estimated and may vary.",
+                    "labDataTitle": "Lab Data"
+                }
+            }
+        },
+        "analysisUTCTimestamp": "2020-11-20T07:04:44.150Z"
+    }
+}
