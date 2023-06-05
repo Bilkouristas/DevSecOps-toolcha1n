@@ -72,10 +72,31 @@ jobs:
               distribution: 'temurin'
               java-version: '17' 
 
-          - name: Setting up DAST-Tool 
+          - name: Set up Mongo
+            uses: supercharge/mongodb-github-action@1.8.0
+
+          - name: Set up ZAP
+            run: |
+              cd DAST_Tool
+              sudo chmod +x download_zap_2.9.0.sh
+              ./download_zap_2.9.0.sh
+
+          - name: Set up selenium
+            run: |
+              docker run -d -p 4444:4444 -p 7900:7900 --shm-size="2g" selenium/standalone-chrome:latest
+
+          - name: Setting up backend
             run: |
               cd DAST_Tool/mern-app
-              sudo docker-compose up &
+              sudo npm i
+              sudo npm start &
+              
+          
+
+          # - name: Setting up DAST-Tool 
+          #   run: |
+          #     cd DAST_Tool/mern-app
+          #     sudo docker-compose up &
           - name: WDST Tests
             run: |
               cd DAST_Tool/mern-app/zapscanner
