@@ -78,8 +78,8 @@ jobs:
               sudo docker-compose up &
           - name: WDST Tests
             run: |
-            cd DAST_Tool/mern-app/zapscanner
-            node example.js 
+              cd DAST_Tool/mern-app/zapscanner
+              node example.js 
 
           
 
