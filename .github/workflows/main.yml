@@ -6,7 +6,7 @@ on:
     branches: ['master']
 
 jobs:
-  job1:  
+  Building_app:  
     name: Building the app
     runs-on: ubuntu-latest
     steps:
@@ -36,14 +36,14 @@ jobs:
           chmod +x mvnw
           docker build -f Dockerfile . -t webgoat/webgoat 
 
-     - name: Run the project  
-       run: |
+      - name: Run the project  
+        run: |
           cd WebGoat
           chmod +x mvnw
           ./mvnw spring-boot:run
 
 
-  basic_scan:
+  Basic_scan:
     name: Basic scan
     runs-on: ubuntu-latest
      
