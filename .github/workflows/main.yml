@@ -56,7 +56,7 @@ jobs:
 
   Setting_DAST:
         name: DAST Scans
-        needs: Building the app/Passive scanning
+        needs: Building_app
         runs-on: ubuntu-latest
         steps:
           - name: Checkout code
