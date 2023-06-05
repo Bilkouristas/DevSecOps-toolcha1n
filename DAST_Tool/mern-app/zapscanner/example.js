@@ -13,7 +13,7 @@ const zapProcOpt = {
 
 // ZAP Options.
 const zapOpt = {
-  proxy: "http://127.0.0.1:8090",
+  proxy: "http://localhost:8081",
 };
 
 // Scans to perform.

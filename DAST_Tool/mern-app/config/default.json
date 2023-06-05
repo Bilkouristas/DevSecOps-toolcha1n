@@ -1,7 +1,7 @@
 {
   "jwtPrivateKey": "",
   "MONGO_URI": "mongodb://localhost/secassess",
-  "ZAP_PATH": "../ZAP_2.9.0/zap.bat",
+  "ZAP_PATH": "../ZAP_2.9.0/zap.sh",
   "ZAP_PROXY": "http://localhost:8090",
   "IS_DOCKER": "false"
 }

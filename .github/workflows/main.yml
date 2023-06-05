@@ -8,7 +8,7 @@ on:
 
 jobs:
   Building_app:  
-    name: Building the app/Passive scanning
+    name: Building the app
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -100,7 +100,7 @@ jobs:
         #     cd DAST_Tool/mern-app
         #     sudo docker-compose up &
           
-          
+
       - name: WDST Tests
         run: |
           cd DAST_Tool/mern-app/zapscanner
