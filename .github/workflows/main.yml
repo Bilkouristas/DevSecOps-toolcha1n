@@ -6,7 +6,7 @@ on:
     branches: ['master']
 
 jobs:
-  Building_app:
+  Building_app: 
     name: Building the app
     runs-on: ubuntu-latest
     
