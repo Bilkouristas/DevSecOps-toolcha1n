@@ -10,8 +10,8 @@ jobs:
 
 # Replace this section accordingly, with your under development application
   Building_app:
-    name: Building the app
     runs-on: ubuntu-latest
+    name: Building the app
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
