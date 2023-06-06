@@ -83,7 +83,7 @@ jobs:
           ./download_zap_2.9.0.sh
           cd ZAP_2.9.0 
           sudo chmod +x zap.sh
-          ./zap.sh -daemon -port 8090 -host 0.0.0.0 -config api.disablekey=true -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true
+          ./zap.sh -daemon -port 8090 -host 0.0.0.0 -config api.disablekey=true -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true &
 
       - name: Set up selenium
         run: |
