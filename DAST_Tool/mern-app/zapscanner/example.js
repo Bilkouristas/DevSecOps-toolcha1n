@@ -18,8 +18,8 @@ const zapOpt = {
 
 // Scans to perform.
 const zapScans = {
-  spider: false,
-  ajaxspider: true,
+  spider: true,
+  ajaxspider: false,
   activescan: false,
 };
 
