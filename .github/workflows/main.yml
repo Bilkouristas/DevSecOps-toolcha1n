@@ -111,11 +111,12 @@ jobs:
 
       - name: Getting the reports
         run: |
-          curl -k http://localhost:3001
-          curl -k http://localhost:3001/api/reports
           curl -k -H "Accept: application/json" http://localhost:8090/JSON/spider/view/results/?baseurl=http://localhost:8070/
           curl -k -H "Accept: application/json" https://localhost:8090/JSON/ajaxSpider/view/results/?baseurl=http://localhost:8070/         
           curl -k -H "Accept: application/json" https://localhost:8090/JSON/core/view/alerts/?baseurl=http://localhost:8070/
+          
+#         curl -k http://localhost:3001
+#         curl -k http://localhost:3001/api/reports
           
 
           
