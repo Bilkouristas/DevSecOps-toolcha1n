@@ -14,11 +14,11 @@ describe('dvwaLogin', function() {
     await driver.quit();
   })
   it('dvwaLogin', async function() {
-    await driver.get("http://192.168.0.171:80/login.php") 
+    await driver.get("http://localhost:8080/WebGoat") 
     await driver.manage().window().setRect(1453, 759)
     await driver.findElement(By.name("username")).click()
-    await driver.findElement(By.name("username")).sendKeys("admin")
-    await driver.findElement(By.name("password")).sendKeys("password")
+    await driver.findElement(By.name("username")).sendKeys("guest")
+    await driver.findElement(By.name("password")).sendKeys("guest")
     await driver.findElement(By.name("Login")).click()
     await driver.findElement(By.linkText("CSP Bypass")).click()
   })
