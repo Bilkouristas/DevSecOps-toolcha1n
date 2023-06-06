@@ -109,6 +109,17 @@ jobs:
           cd DAST_Tool/mern-app/zapscanner
           node example.js 
 
+      - name: Getting the reports
+        run: |
+          curl http://localhost:3001
+          curl http://localhost:3001/api/reports
+          curl http://localhost:8090/JSON/spider/view/results/?baseurl=http://localhost:8070/
+          -H "Accept: application/json"
+          curl https://localhost:8090/JSON/ajaxSpider/view/results/?baseurl=http://localhost:8070/
+          -H "Accept: application/json"
+          curl https://localhost:8090/JSON/core/view/alerts/?baseurl=http://localhost:8070/
+          -H "Accept: application/json"
+
           
 
   # WAST_Tests:
