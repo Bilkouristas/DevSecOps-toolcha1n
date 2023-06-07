@@ -142,7 +142,7 @@ module.exports = async (
     // Run AJAX Spider Scan to the given URL.
     // Check AJAX Spider status until its done.
     if (zapScans["ajaxspider"]) {
-      await startAJAXSpider(zaproxy, url, ajaxOpt);
+      await startAJAXSpider(zaproxy, null, ajaxOpt);
       await checkAJAXSpider(zaproxy, ajaxOpt.ajaxTimeout);
     }
 

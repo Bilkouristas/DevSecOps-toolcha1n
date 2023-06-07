@@ -43,7 +43,7 @@ const excludeURLs = [
 // Selenium Test Settings
 const seleniumTest = {
   browser: "chrome",
-  headless: false,
+  headless: true,
   testPath: "./exampleSeleniumTestDVWA.js",
 };
 
