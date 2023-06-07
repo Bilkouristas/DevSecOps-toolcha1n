@@ -206,6 +206,6 @@ jobs:
             docker_name: 'owasp/zap2docker-stable'
             target: 'http://localhost:3000'
           #  rules_file_name: '.zap/rules.tsv'
-            cmd_options: '-j -P 8090'
+            cmd_options: '-P 8090'
 
       
