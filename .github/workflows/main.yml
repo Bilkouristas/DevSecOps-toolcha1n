@@ -51,7 +51,7 @@ jobs:
           docker_name: 'owasp/zap2docker-stable'
           target: 'http://localhost:8080/WebGoat'
         #  rules_file_name: '.zap/rules.tsv'
-          cmd_options: '-j'
+          cmd_options: '-j -P 8090'
       
 
       - name: ZAP Full Scan
