@@ -49,18 +49,18 @@ jobs:
         with:
         #  token: ${{ secrets.GITHUB_TOKEN }}
           docker_name: 'owasp/zap2docker-stable'
-          target: 'http://localhost:8080/WebGoat'
+          target: 'http://localhost:1234/WebGoat'
         #  rules_file_name: '.zap/rules.tsv'
           cmd_options: '-j'
       
-      - name: ZAP Full Scan
-        uses: zaproxy/action-full-scan@v0.4.0
-        with:
-        #  token: ${{ secrets.GITHUB_TOKEN }}
-          docker_name: 'owasp/zap2docker-stable'
-          target: 'http://localhost:8080/WebGoat'
-        #  rules_file_name: '.zap/rules.tsv'
-          cmd_options: '-j'
+      # - name: ZAP Full Scan
+      #   uses: zaproxy/action-full-scan@v0.4.0
+      #   with:
+      #   #  token: ${{ secrets.GITHUB_TOKEN }}
+      #     docker_name: 'owasp/zap2docker-stable'
+      #     target: 'http://localhost:8080/WebGoat'
+      #   #  rules_file_name: '.zap/rules.tsv'
+      #     cmd_options: '-j'
 
   # Setting_DAST_Tool:
   #       name: DAST Scans
