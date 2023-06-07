@@ -60,7 +60,7 @@ jobs:
           docker_name: 'owasp/zap2docker-stable'
           target: 'http://localhost:8080/WebGoat'
         #  rules_file_name: '.zap/rules.tsv'
-          cmd_options: '-d'
+          cmd_options: '-j'
 
   # Setting_DAST_Tool:
   #       name: DAST Scans
