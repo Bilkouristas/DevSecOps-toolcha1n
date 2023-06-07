@@ -51,8 +51,16 @@ jobs:
           docker_name: 'owasp/zap2docker-stable'
           target: 'http://localhost:8080/WebGoat'
         #  rules_file_name: '.zap/rules.tsv'
-          cmd_options: '-a'
-  
+          cmd_options: '-j'
+      
+      # - name: ZAP Full Scan
+      #   uses: zaproxy/action-full-scan@v0.7.0
+      #   with:
+      #   #  token: ${{ secrets.GITHUB_TOKEN }}
+      #     docker_name: 'owasp/zap2docker-stable'
+      #     target: 'http://localhost:8080/WebGoat'
+      #   #  rules_file_name: '.zap/rules.tsv'
+      #     cmd_options: '-j'
 
   # Setting_DAST_Tool:
   #       name: DAST Scans
@@ -72,6 +80,11 @@ jobs:
           #   with:
           #     distribution: 'temurin'
           #     java-version: '17' 
+
+
+
+
+
 
       - name: Set up Mongo
         uses: supercharge/mongodb-github-action@1.8.0
@@ -112,7 +125,7 @@ jobs:
       - name: Getting the reports
         run: |
           curl -k -H "Accept: application/json" http://localhost:3001/api/reports/
-          curl -k -H "Accept: application/json" http://localhost:8090/OTHER/core/other/jsonreport -o zap.json
+#          curl -k -H "Accept: application/json" http://localhost:8090/OTHER/core/other/jsonreport -o zap.json
 #            curl -k -H "Accept: application/json" https://localhost:3001/JSON/ajaxSpider/view/results/?baseurl=http://localhost:8070/         
 #            curl -k -H "Accept: application/json" https://localhost:3001/JSON/core/view/alerts/?baseurl=http://localhost:8070/
           
