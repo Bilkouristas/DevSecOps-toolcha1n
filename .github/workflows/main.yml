@@ -188,7 +188,7 @@ jobs:
             git clone https://github.com/juice-shop/juice-shop.git --depth 1
             cd juice-shop
             sudo npm install
-            sudo npm start
+            sudo npm start &
         - name: ZAP Passive Scan
           uses: zaproxy/action-baseline@v0.7.0
           with:
