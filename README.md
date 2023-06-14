@@ -13,7 +13,7 @@ Passive scanning does not change the requests nor the responses in any way and i
 
 Add this to your yml file in .github/workflows/myworkflow.yml
 
-`jobs:
+``jobs:
   zap_scan:
     runs-on: ubuntu-latest
     name: Passive Scan
@@ -27,13 +27,13 @@ Add this to your yml file in .github/workflows/myworkflow.yml
         with:
           target: 'http://localhost:your_app_port_here'
           rules_file_name: '.zap/rules.tsv'
-          cmd_options: '-a -j -P 8090'`
+          cmd_options: '-a -j -P 8090'``
 
 Optional 
 -cmd options: You can use additional command line rules in the basic scan. Check this manual for more options 'https://www.zaproxy.org/docs/docker/baseline-scan/'. In our example we use -a include the alpha passive scan rules as well, -j to use the Ajax spider in addition to the traditional one, -P 8090 specify listen port of zap proxy
 -rules.tsv: You can create a rules.tsv config file that can change any rules to FAIL or IGNORE 
-`10035	IGNORE	(Strict-Transport-Security Header Not Set)
-10098	IGNORE	(Cross-Domain Misconfiguration)`
+``10035	IGNORE	(Strict-Transport-Security Header Not Set)
+10098	IGNORE	(Cross-Domain Misconfiguration)``
 
 Based on the scan results an active issue is created in GitHub repository. The action will update the issue if it identifies any new or resolved alerts and will close the issue if all the alerts have been resolved. A detailed report is attached to the workflow run(as an artifact) to get more information regarding the identified alerts. The report is available in HTML and Markdown formats.
 
@@ -43,7 +43,7 @@ Based on the scan results an active issue is created in GitHub repository. The a
 Description: The ZAP full scan action runs the ZAP spider against the specified target (by default with no time limit) followed by an optional ajax spider scan and then a full active scan before reporting the results. The alerts will be maintained as a GitHub issue in the corresponding repository.
 WARNING this action will perform attacks on the target website. You should only scan targets that you have permission to test. You should also check with your hosting company and any other services such as CDNs that may be affected before running this action.
 
-`jobs:
+``jobs:
   zap_scan:
     runs-on: ubuntu-latest
     name: Scan the webapplication
@@ -58,7 +58,7 @@ WARNING this action will perform attacks on the target website. You should only 
           docker_name: 'owasp/zap2docker-stable'
           target: 'http://localhost:You_app_port_here/'
           rules_file_name: '.zap/rules.tsv'
-          cmd_options: '-a'`
+          cmd_options: '-a'``
 
 Add this to your yml file in .github/workflows/myworkflow.yml
 
@@ -76,7 +76,7 @@ It is tuned for performing scans against APIs defined by OpenAPI, SOAP, or Graph
 
 WARNING this action will perform attacks on the target API. You should only scan targets that you have permission to test. You should also check with your hosting company and any other services such as CDNs that may be affected before running this action.
 
-`jobs:
+``jobs:
   zap_scan:
     runs-on: ubuntu-latest
     name: Scan the webapplication
@@ -92,7 +92,7 @@ WARNING this action will perform attacks on the target API. You should only scan
           format: openapi
           target: 'http://localhost:your_app_port_here'
           rules_file_name: '.zap/rules.tsv'
-          cmd_options: '-a' `
+          cmd_options: '-a' ``
 
 
 

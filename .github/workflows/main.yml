@@ -89,27 +89,27 @@ jobs:
 
 
 
-      - name: Set up Mongo
-        uses: supercharge/mongodb-github-action@1.8.0
+      # - name: Set up Mongo
+      #   uses: supercharge/mongodb-github-action@1.8.0
 
-      - name: Set up ZAP
-        run: |
-          cd DAST_Tool
-          sudo chmod +x download_zap_2.9.0.sh
-          ./download_zap_2.9.0.sh
-          cd ZAP_2.9.0 
-          sudo chmod +x zap.sh
-          ./zap.sh -daemon -port 8090 -host 0.0.0.0 -config api.disablekey=true -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true &
+      # - name: Set up ZAP
+      #   run: |
+      #     cd DAST_Tool
+      #     sudo chmod +x download_zap_2.9.0.sh
+      #     ./download_zap_2.9.0.sh
+      #     cd ZAP_2.9.0 
+      #     sudo chmod +x zap.sh
+      #     ./zap.sh -daemon -port 8090 -host 0.0.0.0 -config api.disablekey=true -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true &
 
-      - name: Set up selenium
-        run: |
-          docker run -d -p 4444:4444 -p 7900:7900 --shm-size="2g" selenium/standalone-chrome:latest
+      # - name: Set up selenium
+      #   run: |
+      #     docker run -d -p 4444:4444 -p 7900:7900 --shm-size="2g" selenium/standalone-chrome:latest
 
-      - name: Setting up backend
-        run: |
-          cd DAST_Tool/mern-app
-          sudo npm i
-          sudo npm start &
+      # - name: Setting up backend
+      #   run: |
+      #     cd DAST_Tool/mern-app
+      #     sudo npm i
+      #     sudo npm start &
 
           
           
@@ -120,14 +120,14 @@ jobs:
         #     sudo docker-compose up &
           
 
-      - name: BDST Tests
-        run: |
-          cd DAST_Tool/mern-app/zapscanner
-          node example.js 
+      # - name: BDST Tests
+      #   run: |
+      #     cd DAST_Tool/mern-app/zapscanner
+      #     node example.js 
 
-      - name: Getting the reports
-        run: |
-          curl -k -H "Accept: application/json" http://localhost:3001/api/reports/
+      # - name: Getting the reports
+      #   run: |
+      #     curl -k -H "Accept: application/json" http://localhost:3001/api/reports/
 #          curl -k -H "Accept: application/json" http://localhost:8090/OTHER/core/other/jsonreport -o zap.json
 #            curl -k -H "Accept: application/json" https://localhost:3001/JSON/ajaxSpider/view/results/?baseurl=http://localhost:8070/         
 #            curl -k -H "Accept: application/json" https://localhost:3001/JSON/core/view/alerts/?baseurl=http://localhost:8070/
@@ -171,41 +171,41 @@ jobs:
   #       #  rules_file_name: '.zap/rules.tsv'
   #         cmd_options: '-a'
     
-  # Building_app_1:  
-  #     name: Setting up Juice Shop
-  #     runs-on: ubuntu-latest
-  #     needs: Building_app
-  #     steps:
-  #       - name: Checkout code
-  #         uses: actions/checkout@v3
+  Building_app_1:  
+      name: Setting up Juice Shop
+      runs-on: ubuntu-latest
+      needs: Building_app
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v3
 
-  #       - name: Set up node.js
-  #         uses: actions/setup-node@v3
-  #         with: 
-  #           node-version: '12'
-  #       - name: Cloning the repo and Building Juice Shop
-  #         run: |
-  #           git clone https://github.com/juice-shop/juice-shop.git --depth 1
-  #           cd juice-shop
-  #           sudo npm install
-  #           sudo npm start &
-  #       - name: ZAP Passive Scan
-  #         uses: zaproxy/action-baseline@v0.7.0
-  #         with:
-  #       #  token: ${{ secrets.GITHUB_TOKEN }}
-  #           docker_name: 'owasp/zap2docker-stable'
-  #           target: 'http://localhost:3000'
-  #       #  rules_file_name: '.zap/rules.tsv'
-  #           cmd_options: '-j -P 8090'
+        - name: Set up node.js
+          uses: actions/setup-node@v3
+          with: 
+            node-version: '12'
+        - name: Cloning the repo and Building Juice Shop
+          run: |
+            git clone https://github.com/juice-shop/juice-shop.git --depth 1
+            cd juice-shop
+            sudo npm install
+            sudo npm start &
+        - name: ZAP Passive Scan
+          uses: zaproxy/action-baseline@v0.7.0
+          with:
+        #  token: ${{ secrets.GITHUB_TOKEN }}
+            docker_name: 'owasp/zap2docker-stable'
+            target: 'http://localhost:3000'
+        #  rules_file_name: '.zap/rules.tsv'
+            cmd_options: '-j -P 8090'
       
 
-  #       - name: ZAP Full Scan
-  #         uses: zaproxy/action-full-scan@v0.4.0
-  #         with:
-  #         #  token: ${{ secrets.GITHUB_TOKEN }}
-  #           docker_name: 'owasp/zap2docker-stable'
-  #           target: 'http://localhost:3000'
-  #         #  rules_file_name: '.zap/rules.tsv'
-  #           cmd_options: '-P 8090'
+        - name: ZAP Full Scan
+          uses: zaproxy/action-full-scan@v0.4.0
+          with:
+          #  token: ${{ secrets.GITHUB_TOKEN }}
+            docker_name: 'owasp/zap2docker-stable'
+            target: 'http://localhost:3000'
+          #  rules_file_name: '.zap/rules.tsv'
+            cmd_options: '-P 8090'
 
       
