@@ -1,11 +1,27 @@
 # DevSecOps - Toolcha1n
 
-### This is a DAST Tool using the OWASP ZAP open source project for automated security testing on the CI/CD Pipeline of Github Actions
+
+
+Table of contents
+=================
+
+<!--ts-->
+   * [SCA](#SCA)
+   * [SAST](#SAST)
+   * [DAST](#DAST)
+<!--te-->
+
+
+DAST (Dynamic Application Security Testing)
+=================
+
+This is a DAST Tool using the OWASP ZAP open source project for automated security testing on the CI/CD Pipeline of Github Actions
+-------------
 
 The purpose of this tool is aimed in helping DevSecOps teams, by easily integrating Security scans in a CI/CD Pipeline environment using Github Actions. The philosophy behind this project is to help you easily integrate security testing in your CI/CD pipelines.
 
 
-1. Simple Baseline Scan/ Simple Spider
+1. ### Simple Baseline Scan/ Simple Spider
 
 _Description_: ZAP passively scans all HTTP messages (requests and responses) sent to the web application being tested.
 Passive scanning does not change the requests nor the responses in any way and is therefore safe to use. 
@@ -43,7 +59,7 @@ _Optional_
 Based on the scan results an active issue is created in GitHub repository. The action will update the issue if it identifies any new or resolved alerts and will close the issue if all the alerts have been resolved. A detailed report is attached to the workflow run(as an artifact) to get more information regarding the identified alerts. The report is available in HTML and Markdown formats.
 
 
-2. Active Scan
+2. ### Active Scan
 
 _Description_: The ZAP full scan action runs the ZAP spider against the specified target (by default with no time limit) followed by an optional ajax spider scan and then a full active scan before reporting the results. The alerts will be maintained as a GitHub issue in the corresponding repository.
 _WARNING_ this action will perform attacks on the target website. You should only scan targets that you have permission to test. You should also check with your hosting company and any other services such as CDNs that may be affected before running this action.
@@ -69,15 +85,15 @@ jobs:
 
 Add this to your yml file in `.github/workflows/myworkflow.yml`
 
-3. Selenium/BDST/AJAX
+3. ### Selenium/BDST/AJAX spider
 
-_Description_: 
+_Description_: The AJAX Spider add-on integrates in ZAP a crawler of AJAX rich sites called Crawljax. You can use it to identify the pages of the targeted site. You can combine it with the (normal) spider for better results. The AJAX Spider allows you to crawl web applications written in AJAX in far more depth than the native Spider
 
 ```code here```
 
 Add this to your yml file in `.github/workflows/.yml`
 
-4. API scan
+4. ### API scan
 
 It is tuned for performing scans against APIs defined by OpenAPI, SOAP, or GraphQL via either a local file or a URL.
 
@@ -106,7 +122,7 @@ jobs:
 
 
 
-5. *Advanced cases* Custom web hooks
+5. ### *Advanced cases* Custom web hooks
 
 Modifying Args
 For the AJAX crawler you may want to target a suburl with a specific hash (http://example.com vs http://example.com/#/dashboard). You can use the zap_ajax_spider hook to intercept the arguments and modify them.
@@ -130,16 +146,16 @@ def zap_ajax_spider(zap, target, max_time):
 ```
 Run scan with hook flag
 
-# Run baseline directly
+Run baseline directly
 ```bash
 zap-baseline.py -t https://example.com --hook=my-hooks.py
 ```
 
-# or using Docker 
+or using Docker 
 ```bash
 docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable zap-baseline.py \
     -t https://www.example.com -g gen.conf -r testreport.html --hook=/zap/wrk/my-hooks.py
-    ```
+```
 
 _Example Hooks_
 https://github.com/zaproxy/community-scripts/tree/main/scan-hooks
@@ -155,4 +171,109 @@ Juice Shop is more modern and thus written in JS
 
 1)WebGoat
 2)Juice Shop
+
+SCA (Security Component Analysis)
+=================
+
+(_Used Tool_: Dependabot _Alternatives_: OWASP Dependencies Check, FOSSA, Snyk)
+
+_Description_: Dependabot will scan your GitHub repository dependancies, their versions and any vulnerabilities related to them and submit PRs to update your dependencies.
+
+Automatically enable Dependabot on the Security tab on your github repo or alternatively, for manual setup create a file named `dependabot.yml` inside `.github` folder and paste this content into it:
+
+```yml
+version: 2
+updates:
+    - package-ecosystem: "composer"
+      directory: "/" # Location of package manifests
+      schedule:
+          interval: "daily"
+```
+
+If you’re working with Yarn or NPM for example, replace the value of package-ecosystem by “yarn” or “npm”.
+More ecosystems like Gradle (Java), Cargo (Rust), GoMod (Golang), Bundle (Ruby), etc are supported. For the official documentation of supported ecosystems follow this link 
+[package-ecosystems](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#package-ecosystem)
+
+SAST (Static Analysis Security Testing)
+=================
+
+(_Used Tool_: CodeQl _Alternatives_: Sonarqube, Checkmarx, Snyk Code)
+
+_Description_: CodeQL is a Github Tool made for scanning and analyzing the code in a GitHub repository to find security vulnerabilities and coding errors. 
+
+You can use code scanning to find, triage, and prioritize fixes for existing problems in your code. Code scanning also prevents developers from introducing new problems. You can schedule scans for specific days and times, or trigger scans when a specific event occurs in the repository, such as a push.
+
+If code scanning finds a potential vulnerability or error in your code, GitHub displays an alert in the repository. After you fix the code that triggered the alert, GitHub closes the alert. 
+
+Automatically enable CodeQL on the Security tab on your github repo or alternatively, for manual setup create a file named `dependabot.yml` inside `.github/workflows` folder and paste this content into it:
+
+(You can either set the codeql workflow to run on a trigger or schedule it on a time basis for efficiency(e.g weekly) with _cron_ utility)
+```yml
+name: "CodeQL"
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ "master" ]
+  schedule:
+    - cron: '30 22 * * 6'
+
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: ${{ (matrix.language == 'swift' && 'macos-latest') || 'ubuntu-latest' }}
+    timeout-minutes: ${{ (matrix.language == 'swift' && 120) || 360 }}
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [ 'java', 'javascript', 'python' ]
+        # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python', 'ruby', 'swift' ]
+        # Use only 'java' to analyze code written in Java, Kotlin or both
+        # Use only 'javascript' to analyze code written in JavaScript, TypeScript or both
+        # Learn more about CodeQL language support at https://aka.ms/codeql-docs/language-support
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    # Initializes the CodeQL tools for scanning.
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v2
+      with:
+        languages: ${{ matrix.language }}
+        # If you wish to specify custom queries, you can do so here or in a config file.
+        # By default, queries listed here will override any specified in a config file.
+        # Prefix the list here with "+" to use these queries and those in the config file.
+
+        # For more details on CodeQL's query packs, refer to: https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning#using-queries-in-ql-packs
+        # queries: security-extended,security-and-quality
+
+
+    # Autobuild attempts to build any compiled languages (C/C++, C#, Go, Java, or Swift).
+    # If this step fails, then you should remove it and run the build manually (see below)
+    - name: Autobuild
+      uses: github/codeql-action/autobuild@v2
+
+    # ℹ️ Command-line programs to run using the OS shell.
+    # 📚 See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun
+
+    #   If the Autobuild fails above, remove it and uncomment the following three lines.
+    #   modify them (or add more) to build your code if your project, please refer to the EXAMPLE below for guidance.
+
+    # - run: |
+    #     echo "Run, Build Application using script"
+    #     ./location_of_script_within_repo/buildscript.sh
+
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v2
+      with:
+        category: "/language:${{matrix.language}}"
+```
 
