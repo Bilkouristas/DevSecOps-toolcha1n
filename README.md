@@ -24,9 +24,9 @@ Table of contents
 SCA (Security Component Analysis)
 =================
 
-(**_Used Tool_: Dependabot** _Alternatives_: OWASP Dependencies Check, FOSSA, Snyk)
+(**_Used Tool_: Dependabot**/_Alternatives_: OWASP Dependencies Check, FOSSA, Snyk)
 
-_Description_: Dependabot will scan your GitHub repository dependancies, their versions and any vulnerabilities related to them and submit PRs to update your dependencies.
+**Description**: Dependabot will scan your GitHub repository dependancies, their versions and any vulnerabilities related to them and submit PRs to update your dependencies.
 
 Automatically enable Dependabot on the Security tab on your github repo or alternatively, for manual setup create a file named `dependabot.yml` inside `.github` folder and paste this content into it:
 
@@ -46,9 +46,9 @@ More ecosystems like Gradle (Java), Cargo (Rust), GoMod (Golang), Bundle (Ruby),
 SAST (Static Application Security Testing)
 =================
 
-(**_Used Tool_: CodeQL** _Alternatives_: Sonarqube, Checkmarx, Snyk Code)
+(**_Used Tool_: CodeQL**/_Alternatives_: Sonarqube, Checkmarx, Snyk Code)
 
-_Description_: CodeQL is a Github Tool made for scanning and analyzing the code in a GitHub repository to find security vulnerabilities and coding errors. 
+**Description**: CodeQL is a Github Tool made for scanning and analyzing the code in a GitHub repository to find security vulnerabilities and coding errors. 
 
 You can use code scanning to find, triage, and prioritize fixes for existing problems in your code. Code scanning also prevents developers from introducing new problems. You can schedule scans for specific days and times, or trigger scans when a specific event occurs in the repository, such as a push.
 
@@ -139,7 +139,7 @@ The purpose of this tool is aimed in helping DevSecOps teams, by easily integrat
 
 1. ### Simple Baseline Scan/ Simple Spider
 
-_Description_: ZAP passively scans all HTTP messages (requests and responses) sent to the web application being tested.
+**Description**: ZAP passively scans all HTTP messages (requests and responses) sent to the web application being tested.
 Passive scanning does not change the requests nor the responses in any way and is therefore safe to use. 
 
 
@@ -177,7 +177,7 @@ Based on the scan results an active issue is created in GitHub repository. The a
 
 2. ### Active Scan
 
-_Description_: The ZAP full scan action runs the ZAP spider against the specified target (by default with no time limit) followed by an optional ajax spider scan and then a full active scan before reporting the results. The alerts will be maintained as a GitHub issue in the corresponding repository.
+**Description**: The ZAP full scan action runs the ZAP spider against the specified target (by default with no time limit) followed by an optional ajax spider scan and then a full active scan before reporting the results. The alerts will be maintained as a GitHub issue in the corresponding repository.
 _WARNING_ this action will perform attacks on the target website. You should only scan targets that you have permission to test. You should also check with your hosting company and any other services such as CDNs that may be affected before running this action.
 
 ```yml
@@ -203,11 +203,26 @@ Add this to your yml file in `.github/workflows/myworkflow.yml`
 
 3. ### Selenium/BDST/AJAX spider
 
-_Description_: The AJAX Spider add-on integrates in ZAP a crawler of AJAX rich sites called Crawljax. You can use it to identify the pages of the targeted site. You can combine it with the (normal) spider for better results. The AJAX Spider allows you to crawl web applications written in AJAX in far more depth than the native Spider
+**Description**: The AJAX Spider add-on integrates in ZAP a crawler of AJAX rich sites called Crawljax. You can use it to identify the pages of the targeted site. You can combine it with the (normal) spider for better results. The AJAX Spider allows you to crawl web applications written in AJAX in far more depth than the native Spider.
 
-```code here```
+```yml
+jobs:
+  zap_scan:
+    runs-on: ubuntu-latest
+    name: Passive Scan
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: master
+      - name: Passive Scan
+        uses: zaproxy/action-baseline@v0.3.0
+        with:
+          target: 'http://localhost:your_app_port_here'
+          cmd_options: '-j'
+```
 
-Add this to your yml file in `.github/workflows/.yml`
+Add this to your yml file in `.github/workflows/.yml`, the `-j` cmd_option is for enabling the ajax spider in your scan.
 
 4. ### API scan
 
