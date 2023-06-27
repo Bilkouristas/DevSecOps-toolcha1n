@@ -6,9 +6,14 @@ Table of contents
 =================
 
 <!--ts-->
-   * [SCA](#SCA)
-   * [SAST](#SAST)
-   * [DAST](#DAST)
+   * [SCA](#sca-security-component-analysis)
+   * [SAST](#sast-static-analysis-security-testing)
+   * [DAST](#dast-dynamic-application-security-testing)
+      * [Baseline Scan](#simple-baseline-scan-simple-spider)
+      * [Active Scan](#active_scan)
+      * [Selenium/BDST/AJAX spider](#selenium-bdst-ajax-spider)
+      * [API scan](#api-scan)
+      * [Advanced cases](#advanced-cases-custom-web-hooks)
 <!--te-->
 
 
@@ -175,7 +180,7 @@ Juice Shop is more modern and thus written in JS
 SCA (Security Component Analysis)
 =================
 
-(_Used Tool_: Dependabot _Alternatives_: OWASP Dependencies Check, FOSSA, Snyk)
+(**_Used Tool_: Dependabot** _Alternatives_: OWASP Dependencies Check, FOSSA, Snyk)
 
 _Description_: Dependabot will scan your GitHub repository dependancies, their versions and any vulnerabilities related to them and submit PRs to update your dependencies.
 
@@ -197,7 +202,7 @@ More ecosystems like Gradle (Java), Cargo (Rust), GoMod (Golang), Bundle (Ruby),
 SAST (Static Analysis Security Testing)
 =================
 
-(_Used Tool_: CodeQl _Alternatives_: Sonarqube, Checkmarx, Snyk Code)
+(**_Used Tool_: CodeQl** _Alternatives_: Sonarqube, Checkmarx, Snyk Code)
 
 _Description_: CodeQL is a Github Tool made for scanning and analyzing the code in a GitHub repository to find security vulnerabilities and coding errors. 
 
