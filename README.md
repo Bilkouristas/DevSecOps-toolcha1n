@@ -19,6 +19,7 @@ Table of contents
       * [Selenium/BDST/AJAX spider](#selenium-bdst-ajax-spider)
       * [API scan](#api-scan)
       * [Advanced cases](#advanced-cases-custom-web-hooks)
+   * [Example usages](#example-usages)
 <!--te-->
 
 SCA (Security Component Analysis)

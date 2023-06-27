@@ -71,6 +71,7 @@ jobs:
         echo "Run, Build Application using script"
         cd WebGoat
         chmod +x mvnw
+        ./mvnw clean install
         ./mvnw spring-boot:run &
 
     - name: Perform CodeQL Analysis
