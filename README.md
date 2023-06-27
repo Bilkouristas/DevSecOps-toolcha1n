@@ -1,20 +1,131 @@
 # DevSecOps - Toolcha1n
 
+Description
+=============
 
+This is a complete pipeline security DevSecOps toolchain, from Component Analysis and Static Code Testing to Dynamic and Blackbox Application Testing.
 
 Table of contents
 =================
 
 <!--ts-->
-   * [SCA](#sca-security-component-analysis)
-   * [SAST](#sast-static-analysis-security-testing)
-   * [DAST](#dast-dynamic-application-security-testing)
+   * [SCA (Security Component Analysis)](#sca-security-component-analysis)
+      * [Dependabot](#sca-security-component-analysis)
+   * [SAST (Static Application Security Testing)](#sast-static-analysis-security-testing)
+      * [CodeQL](#sast-static-application-security-testing)
+   * [DAST (Dynamic Application Security Testing)](#dast-dynamic-application-security-testing)
       * [Baseline Scan](#simple-baseline-scan-simple-spider)
       * [Active Scan](#active_scan)
       * [Selenium/BDST/AJAX spider](#selenium-bdst-ajax-spider)
       * [API scan](#api-scan)
       * [Advanced cases](#advanced-cases-custom-web-hooks)
 <!--te-->
+
+SCA (Security Component Analysis)
+=================
+
+(**_Used Tool_: Dependabot** _Alternatives_: OWASP Dependencies Check, FOSSA, Snyk)
+
+_Description_: Dependabot will scan your GitHub repository dependancies, their versions and any vulnerabilities related to them and submit PRs to update your dependencies.
+
+Automatically enable Dependabot on the Security tab on your github repo or alternatively, for manual setup create a file named `dependabot.yml` inside `.github` folder and paste this content into it:
+
+```yml
+version: 2
+updates:
+    - package-ecosystem: "composer"
+      directory: "/" # Location of package manifests
+      schedule:
+          interval: "daily"
+```
+
+If you’re working with Yarn or NPM for example, replace the value of package-ecosystem by “yarn” or “npm”.
+More ecosystems like Gradle (Java), Cargo (Rust), GoMod (Golang), Bundle (Ruby), etc are supported. For the official documentation of supported ecosystems follow this link 
+[package-ecosystems](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#package-ecosystem)
+
+SAST (Static Application Security Testing)
+=================
+
+(**_Used Tool_: CodeQL** _Alternatives_: Sonarqube, Checkmarx, Snyk Code)
+
+_Description_: CodeQL is a Github Tool made for scanning and analyzing the code in a GitHub repository to find security vulnerabilities and coding errors. 
+
+You can use code scanning to find, triage, and prioritize fixes for existing problems in your code. Code scanning also prevents developers from introducing new problems. You can schedule scans for specific days and times, or trigger scans when a specific event occurs in the repository, such as a push.
+
+If code scanning finds a potential vulnerability or error in your code, GitHub displays an alert in the repository. After you fix the code that triggered the alert, GitHub closes the alert. 
+
+Automatically enable CodeQL on the Security tab on your github repo or alternatively, for manual setup create a file named `dependabot.yml` inside `.github/workflows` folder and paste this content into it:
+
+(You can either set the codeql workflow to run on a trigger or schedule it on a time basis for efficiency(e.g weekly) with _cron_ utility)
+```yml
+name: "CodeQL"
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ "master" ]
+  schedule:
+    - cron: '30 22 * * 6'
+
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: ${{ (matrix.language == 'swift' && 'macos-latest') || 'ubuntu-latest' }}
+    timeout-minutes: ${{ (matrix.language == 'swift' && 120) || 360 }}
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [ 'java', 'javascript', 'python' ]
+        # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python', 'ruby', 'swift' ]
+        # Use only 'java' to analyze code written in Java, Kotlin or both
+        # Use only 'javascript' to analyze code written in JavaScript, TypeScript or both
+        # Learn more about CodeQL language support at https://aka.ms/codeql-docs/language-support
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    # Initializes the CodeQL tools for scanning.
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v2
+      with:
+        languages: ${{ matrix.language }}
+        # If you wish to specify custom queries, you can do so here or in a config file.
+        # By default, queries listed here will override any specified in a config file.
+        # Prefix the list here with "+" to use these queries and those in the config file.
+
+        # For more details on CodeQL's query packs, refer to: https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning#using-queries-in-ql-packs
+        # queries: security-extended,security-and-quality
+
+
+    # Autobuild attempts to build any compiled languages (C/C++, C#, Go, Java, or Swift).
+    # If this step fails, then you should remove it and run the build manually (see below)
+    - name: Autobuild
+      uses: github/codeql-action/autobuild@v2
+
+    # ℹ️ Command-line programs to run using the OS shell.
+    # 📚 See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun
+
+    #   If the Autobuild fails above, remove it and uncomment the following three lines.
+    #   modify them (or add more) to build your code if your project, please refer to the EXAMPLE below for guidance.
+
+    # - run: |
+    #     echo "Run, Build Application using script"
+    #     ./location_of_script_within_repo/buildscript.sh
+
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v2
+      with:
+        category: "/language:${{matrix.language}}"
+```
+
 
 
 DAST (Dynamic Application Security Testing)
@@ -127,7 +238,7 @@ jobs:
 
 
 
-5. ### *Advanced cases* Custom web hooks
+5. ### * *Advanced cases* * Custom web hooks
 
 Modifying Args
 For the AJAX crawler you may want to target a suburl with a specific hash (http://example.com vs http://example.com/#/dashboard). You can use the zap_ajax_spider hook to intercept the arguments and modify them.
@@ -177,108 +288,5 @@ Juice Shop is more modern and thus written in JS
 1)WebGoat
 2)Juice Shop
 
-SCA (Security Component Analysis)
-=================
 
-(**_Used Tool_: Dependabot** _Alternatives_: OWASP Dependencies Check, FOSSA, Snyk)
-
-_Description_: Dependabot will scan your GitHub repository dependancies, their versions and any vulnerabilities related to them and submit PRs to update your dependencies.
-
-Automatically enable Dependabot on the Security tab on your github repo or alternatively, for manual setup create a file named `dependabot.yml` inside `.github` folder and paste this content into it:
-
-```yml
-version: 2
-updates:
-    - package-ecosystem: "composer"
-      directory: "/" # Location of package manifests
-      schedule:
-          interval: "daily"
-```
-
-If you’re working with Yarn or NPM for example, replace the value of package-ecosystem by “yarn” or “npm”.
-More ecosystems like Gradle (Java), Cargo (Rust), GoMod (Golang), Bundle (Ruby), etc are supported. For the official documentation of supported ecosystems follow this link 
-[package-ecosystems](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#package-ecosystem)
-
-SAST (Static Analysis Security Testing)
-=================
-
-(**_Used Tool_: CodeQl** _Alternatives_: Sonarqube, Checkmarx, Snyk Code)
-
-_Description_: CodeQL is a Github Tool made for scanning and analyzing the code in a GitHub repository to find security vulnerabilities and coding errors. 
-
-You can use code scanning to find, triage, and prioritize fixes for existing problems in your code. Code scanning also prevents developers from introducing new problems. You can schedule scans for specific days and times, or trigger scans when a specific event occurs in the repository, such as a push.
-
-If code scanning finds a potential vulnerability or error in your code, GitHub displays an alert in the repository. After you fix the code that triggered the alert, GitHub closes the alert. 
-
-Automatically enable CodeQL on the Security tab on your github repo or alternatively, for manual setup create a file named `dependabot.yml` inside `.github/workflows` folder and paste this content into it:
-
-(You can either set the codeql workflow to run on a trigger or schedule it on a time basis for efficiency(e.g weekly) with _cron_ utility)
-```yml
-name: "CodeQL"
-
-on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    # The branches below must be a subset of the branches above
-    branches: [ "master" ]
-  schedule:
-    - cron: '30 22 * * 6'
-
-jobs:
-  analyze:
-    name: Analyze
-    runs-on: ${{ (matrix.language == 'swift' && 'macos-latest') || 'ubuntu-latest' }}
-    timeout-minutes: ${{ (matrix.language == 'swift' && 120) || 360 }}
-    permissions:
-      actions: read
-      contents: read
-      security-events: write
-
-    strategy:
-      fail-fast: false
-      matrix:
-        language: [ 'java', 'javascript', 'python' ]
-        # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python', 'ruby', 'swift' ]
-        # Use only 'java' to analyze code written in Java, Kotlin or both
-        # Use only 'javascript' to analyze code written in JavaScript, TypeScript or both
-        # Learn more about CodeQL language support at https://aka.ms/codeql-docs/language-support
-
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
-
-    # Initializes the CodeQL tools for scanning.
-    - name: Initialize CodeQL
-      uses: github/codeql-action/init@v2
-      with:
-        languages: ${{ matrix.language }}
-        # If you wish to specify custom queries, you can do so here or in a config file.
-        # By default, queries listed here will override any specified in a config file.
-        # Prefix the list here with "+" to use these queries and those in the config file.
-
-        # For more details on CodeQL's query packs, refer to: https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning#using-queries-in-ql-packs
-        # queries: security-extended,security-and-quality
-
-
-    # Autobuild attempts to build any compiled languages (C/C++, C#, Go, Java, or Swift).
-    # If this step fails, then you should remove it and run the build manually (see below)
-    - name: Autobuild
-      uses: github/codeql-action/autobuild@v2
-
-    # ℹ️ Command-line programs to run using the OS shell.
-    # 📚 See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun
-
-    #   If the Autobuild fails above, remove it and uncomment the following three lines.
-    #   modify them (or add more) to build your code if your project, please refer to the EXAMPLE below for guidance.
-
-    # - run: |
-    #     echo "Run, Build Application using script"
-    #     ./location_of_script_within_repo/buildscript.sh
-
-    - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v2
-      with:
-        category: "/language:${{matrix.language}}"
-```
 

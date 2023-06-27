@@ -1,7 +1,0 @@
-{
-  "jwtPrivateKey": "jwtPrivateKey",
-  "MONGO_URI": "MONGO_URI",
-  "ZAP_PATH": "ZAP_PATH",
-  "ZAP_PROXY": "ZAP_PROXY",
-  "IS_DOCKER": "IS_DOCKER"
-}
