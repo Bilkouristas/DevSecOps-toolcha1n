@@ -300,14 +300,25 @@ For showcase purposes we test 2 common OWASP vulnerable apps the WebGoat and Jui
 WebGoat is older and thus written in Java 
 Juice Shop is more modern and thus written in JS
 
-2 workflows:
 
-1) WebGoat
+1) #### WebGoat
+   - SAST
+
+     Implemented CodeQL on Juice Shop source code and we get the following alerts on the security tab:
+
+     ![alt text](https://github.com/Bilkouristas/DevSecOps-toolcha1n/blob/master/Tests/Juice%20Shop/JuiceShop_SAST.png)
 
 
+   - DAST
+
+     Implemented the ZAP actions tool in the pipeline to dynamically test Juice Shop while up and running as a blackbox. The results for both the basic and the active/full scan can be found on the [Tests folder](Tests/WebGoat)
+
+     And as an automatically generated issue on Github
+
+     ![alt text]()
 
 
-2) Juice Shop
+2) #### Juice Shop
 
 
    - SCA
@@ -320,12 +331,16 @@ Juice Shop is more modern and thus written in JS
 
      Implemented CodeQL on Juice Shop source code and we get the following alerts on the security tab:
 
-     ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+     ![alt text](https://github.com/Bilkouristas/DevSecOps-toolcha1n/blob/master/Tests/Juice%20Shop/JuiceShop_SAST.png)
 
 
    - DAST
 
-     Implemented the ZAP actions tool in the pipeline to dynamically test Juice Shop while up and running as a blackbox. The results for both the basic and the active/full scan can be found on the [Tests folder](/DevSecOps-toolcha1n/tree/master/Tests)
+     Implemented the ZAP actions tool in the pipeline to dynamically test Juice Shop while up and running as a blackbox. The results for both the basic and the active/full scan can be found on the [Tests folder](Tests/Juice Shop)
+
+     And as an automatically generated issue on Github
+
+     ![alt text]()
 
 
 
