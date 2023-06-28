@@ -3,7 +3,7 @@
 Description
 =============
 
-This is a complete automated pipeline security DevSecOps toolchain, from Component Analysis and Static Code Testing to Dynamic and Blackbox Application Testing.
+This is a complete automated CI/CD pipeline security DevSecOps toolchain, from Component Analysis and Static Code Testing to Dynamic and Blackbox Application Testing.
 
 _**Disclaimer:**_ This project is completely based on(and suggests on) fully open source code cybersecurity tools, and is implemented on Github Actions as its CI/CD pipeline which is also completely open source. You can perform the same jobs with paid tools which is out of this projects scope and furthermore, don't neglect the importance of penetration testing and threat hunting procedures to fully cover the cybersecurity aspect of your software/product. 
 
