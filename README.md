@@ -5,6 +5,8 @@ Description
 
 This is a complete pipeline security DevSecOps toolchain, from Component Analysis and Static Code Testing to Dynamic and Blackbox Application Testing.
 
+_**Disclaimer:**_ This project is completely based on(and suggests on) fully open source code cybersecurity tools, and is implemented on Github Actions as its CI/CD pipeline which is also completely open source. You can perform the same jobs with paid tools which is out of this projects scope and furthermore, don't neglect the importance of penetration testing and threat hunting procedures to fully cover the cybersecurity aspect of your software/product. 
+
 Table of contents
 =================
 
@@ -306,16 +308,16 @@ Juice Shop is more modern and thus written in JS
 
      Implemented CodeQL on Juice Shop source code and we get the following alerts on the security tab:
 
-     ![alt text](https://github.com/Bilkouristas/DevSecOps-toolcha1n/blob/master/Tests/Juice%20Shop/JuiceShop_SAST.png)
+     ![alt text](https://github.com/Bilkouristas/DevSecOps-toolcha1n/blob/master/Tests/JuiceShop/JuiceShop_SAST.png)
 
 
    - DAST
 
-     Implemented the ZAP actions tool in the pipeline to dynamically test Juice Shop while up and running as a blackbox. The results for both the basic and the active/full scan can be found on the [Tests folder](Tests/WebGoat)
+     Implemented the ZAP actions tool in the pipeline to dynamically test Juice Shop while up and running as a blackbox. The results for both the basic and the active/full scan can be found on the [Tests](Tests/WebGoat) folder
 
      And as an automatically generated issue on Github
 
-     ![alt text]()
+     ![alt text](https://github.com/Bilkouristas/DevSecOps-toolcha1n/blob/master/Tests/WebGoat/WebGoat_DAST.png)
 
 
 2) #### Juice Shop
@@ -325,22 +327,22 @@ Juice Shop is more modern and thus written in JS
 
      Implemented dependabot on Juice Shop source code and we get the following alerts on the security tab:
 
-     ![alt text](https://github.com/Bilkouristas/DevSecOps-toolcha1n/blob/master/Tests/Juice%20Shop/JuicerShop_SCA.png)
+     ![alt text](https://github.com/Bilkouristas/DevSecOps-toolcha1n/blob/master/Tests/JuiceShop/JuicerShop_SCA.png)
 
    - SAST
 
      Implemented CodeQL on Juice Shop source code and we get the following alerts on the security tab:
 
-     ![alt text](https://github.com/Bilkouristas/DevSecOps-toolcha1n/blob/master/Tests/Juice%20Shop/JuiceShop_SAST.png)
+     ![alt text](https://github.com/Bilkouristas/DevSecOps-toolcha1n/blob/master/Tests/JuiceShop/JuiceShop_SAST.png)
 
 
    - DAST
 
-     Implemented the ZAP actions tool in the pipeline to dynamically test Juice Shop while up and running as a blackbox. The results for both the basic and the active/full scan can be found on the [Tests folder](Tests/Juice Shop)
+     Implemented the ZAP actions tool in the pipeline to dynamically test Juice Shop while up and running as a blackbox. The results for both the basic and the active/full scan can be found on the [Tests](Tests/JuiceShop) folder
 
      And as an automatically generated issue on Github
 
-     ![alt text]()
+     ![alt text](https://github.com/Bilkouristas/DevSecOps-toolcha1n/blob/master/Tests/JuiceShop/JuiceShop_DAST.png)
 
 
 
