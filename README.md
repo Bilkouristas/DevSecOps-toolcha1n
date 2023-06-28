@@ -135,7 +135,7 @@ DAST (Dynamic Application Security Testing)
 This is a DAST Tool using the OWASP ZAP open source project for automated security testing on the CI/CD Pipeline of Github Actions
 -------------
 
-The purpose of this tool is aimed in helping DevSecOps teams, by easily integrating Security scans in a CI/CD Pipeline environment using Github Actions. The philosophy behind this project is to help you easily integrate security testing in your CI/CD pipelines.
+The purpose of this tool is aimed in helping DevSecOps teams, by easily integrating Security scans in a CI/CD Pipeline environment using Github Actions. The philosophy behind this project is to help you easily implement security testing in your CI/CD pipelines.
 
 
 1. ### Simple Baseline Scan/ Simple Spider
@@ -166,8 +166,8 @@ jobs:
 
 
 _Optional_ 
-- cmd options: You can use additional command line rules in the basic scan. Check this manual for more options 'https://www.zaproxy.org/docs/docker/baseline-scan/'. In our example we use -a include the alpha passive scan rules as well, -j to use the Ajax spider in addition to the traditional one, -P 8090 specify listen port of zap proxy
-- rules.tsv: You can create a rules.tsv config file that can change any rules to FAIL or IGNORE 
+- _cmd options_: You can use additional command line rules in the basic scan. Check this manual for more options 'https://www.zaproxy.org/docs/docker/baseline-scan/'. In our example we use -a include the alpha passive scan rules as well, -j to use the Ajax spider in addition to the traditional one, -P 8090 specify listen port of zap proxy
+- _rules.tsv_: You can create a rules.tsv config file that can change any rules to FAIL or IGNORE 
 ```json
 10035	IGNORE	(Strict-Transport-Security Header Not Set)
 10098	IGNORE	(Cross-Domain Misconfiguration)
@@ -179,6 +179,7 @@ Based on the scan results an active issue is created in GitHub repository. The a
 2. ### Active Scan
 
 **Description**: The ZAP full scan action runs the ZAP spider against the specified target (by default with no time limit) followed by an optional ajax spider scan and then a full active scan before reporting the results. The alerts will be maintained as a GitHub issue in the corresponding repository.
+
 _WARNING_ this action will perform attacks on the target website. You should only scan targets that you have permission to test. You should also check with your hosting company and any other services such as CDNs that may be affected before running this action.
 
 ```yml
@@ -301,8 +302,23 @@ Juice Shop is more modern and thus written in JS
 
 2 workflows:
 
-1)WebGoat
-2)Juice Shop
+1) WebGoat
+
+
+
+
+2) Juice Shop
+
+
+   - SCA
+
+   Implemented dependabot on Juice Shop source code and we get the following alerts in the security tab:
+
+   <image>
+
+   - SAST
+
+   
 
 
 
