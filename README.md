@@ -312,13 +312,20 @@ Juice Shop is more modern and thus written in JS
 
    - SCA
 
-   Implemented dependabot on Juice Shop source code and we get the following alerts in the security tab:
+     Implemented dependabot on Juice Shop source code and we get the following alerts on the security tab:
 
-   <image>
+     ![alt text](https://github.com/Bilkouristas/DevSecOps-toolcha1n/blob/master/Tests/Juice%20Shop/JuicerShop_SCA.png)
 
    - SAST
 
-   
+     Implemented CodeQL on Juice Shop source code and we get the following alerts on the security tab:
+
+     ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+
+
+   - DAST
+
+     Implemented the ZAP actions tool in the pipeline to dynamically test Juice Shop while up and running as a blackbox. The results for both the basic and the active/full scan can be found on the [Tests folder](/DevSecOps-toolcha1n/tree/master/Tests)
 
 
 
