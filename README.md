@@ -3,7 +3,7 @@
 Description
 =============
 
-This is a complete pipeline security DevSecOps toolchain, from Component Analysis and Static Code Testing to Dynamic and Blackbox Application Testing.
+This is a complete automated pipeline security DevSecOps toolchain, from Component Analysis and Static Code Testing to Dynamic and Blackbox Application Testing.
 
 _**Disclaimer:**_ This project is completely based on(and suggests on) fully open source code cybersecurity tools, and is implemented on Github Actions as its CI/CD pipeline which is also completely open source. You can perform the same jobs with paid tools which is out of this projects scope and furthermore, don't neglect the importance of penetration testing and threat hunting procedures to fully cover the cybersecurity aspect of your software/product. 
 
@@ -16,6 +16,7 @@ Table of contents
    * [SAST (Static Application Security Testing)](#sast-static-analysis-security-testing)
       * [CodeQL](#sast-static-application-security-testing)
    * [DAST (Dynamic Application Security Testing)](#dast-dynamic-application-security-testing)
+      * [OWASP ZAP(Zed Attack Proxy)](#this-is-a-dast-tool-using-the-owasp-zap-open-source-project-for-automated-security-testing-on-the-cicd-pipeline-of-github-actions)
       * [Baseline Scan](#simple-baseline-scan-simple-spider)
       * [Active Scan](#active_scan)
       * [Selenium/BDST/AJAX spider](#selenium-bdst-ajax-spider)
@@ -299,7 +300,7 @@ https://github.com/zaproxy/community-scripts/tree/main/scan-hooks
 
 For showcase purposes we test 2 common OWASP vulnerable apps the WebGoat and Juice Shop(the continuation project of bodgeit store)
 
-WebGoat is older and thus written in Java 
+WebGoat is older and thus written in Java while
 Juice Shop is more modern and thus written in JS
 
 
