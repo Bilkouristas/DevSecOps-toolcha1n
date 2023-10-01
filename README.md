@@ -307,7 +307,7 @@ Juice Shop is more modern and thus written in JS
 1) #### WebGoat
 
 
-    - SCA
+   - SCA
 
      Implemented dependabot on WebGoat source code and we get the following alerts on the security tab:
 
