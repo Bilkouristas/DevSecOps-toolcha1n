@@ -5,7 +5,7 @@ Description
 
 This is a complete automated CI/CD pipeline security DevSecOps toolchain, from Component Analysis and Static Code Testing to Dynamic and Blackbox Application Testing.
 
-_**Disclaimer:**_ This project is completely based on(and suggests on) fully open source code cybersecurity tools, and is implemented on Github Actions as its CI/CD pipeline which is also completely open source. You can perform the same jobs with paid tools which is out of this projects scope and furthermore, don't neglect the importance of penetration testing and threat hunting procedures to fully cover the cybersecurity aspect of your software/product. 
+_**Disclaimer:**_ This project is completely based on(and suggests) fully open source code cybersecurity tools, and is implemented on Github Actions as its CI/CD pipeline which is also completely open source. You can perform the same jobs with paid tools which is out of this projects scope and furthermore, don't neglect the importance of penetration testing and threat hunting procedures to fully cover the cybersecurity aspect of your software/product. 
 
 Table of contents
 =================
@@ -305,9 +305,18 @@ Juice Shop is more modern and thus written in JS
 
 
 1) #### WebGoat
+
+
+    - SCA
+
+     Implemented dependabot on WebGoat source code and we get the following alerts on the security tab:
+
+     ![alt text](https://github.com/Bilkouristas/DevSecOps-toolcha1n/blob/master/Tests/JuiceShop/sca_webgoat.png)
+
+
    - SAST
 
-     Implemented CodeQL on Juice Shop source code and we get the following alerts on the security tab:
+     Implemented CodeQL on WebGoat source code and we get the following alerts on the security tab:
 
      ![alt text](https://github.com/Bilkouristas/DevSecOps-toolcha1n/blob/master/Tests/JuiceShop/JuiceShop_SAST.png)
 
