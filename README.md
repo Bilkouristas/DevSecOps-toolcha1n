@@ -311,7 +311,7 @@ Juice Shop is more modern and thus written in JS
 
      Implemented dependabot on WebGoat source code and we get the following alerts on the security tab:
 
-     ![alt text](https://github.com/Bilkouristas/DevSecOps-toolcha1n/blob/master/Tests/JuiceShop/sca_webgoat.png)
+     ![alt text](https://github.com/Bilkouristas/DevSecOps-toolcha1n/blob/master/Tests/WebGoat/sca_webgoat.png)
 
 
    - SAST
